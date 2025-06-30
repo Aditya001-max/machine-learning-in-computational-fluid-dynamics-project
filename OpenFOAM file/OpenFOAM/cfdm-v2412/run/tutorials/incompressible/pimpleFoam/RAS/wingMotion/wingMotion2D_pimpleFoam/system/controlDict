@@ -1,0 +1,72 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     pimpleFoam;
+
+startFrom       startTime;
+startTime       0;
+
+stopAt          endTime;
+endTime         1;
+
+deltaT          0.001;
+
+writeControl    adjustableRunTime;
+writeInterval   0.1;
+
+purgeWrite      0;
+writeFormat     ascii;
+writePrecision  10;
+writeCompression off;
+
+timeFormat      general;
+timePrecision   6;
+
+runTimeModifiable true;
+
+adjustTimeStep  yes;
+maxCo           0.9;
+
+functions
+{
+    forces
+    {
+        type                forces;
+        libs                ("libforces.so");        // ✅ Correct keyword
+        patches             (cylinder);              // ✅ Replace 'cylinder' with actual patch name if different
+        pName               p;
+        UName               U;
+        rho                 rhoInf;                  // ✅ Must be exactly like this
+        rhoInf              1.225;                   // ✅ Must match your case units
+        CofR                (0 0 0);
+        log                 yes;
+    }
+
+    meshMotion
+    {
+        type                volFieldValue;
+        libs                ("libfieldFunctionObjects.so");
+        enabled             true;
+        writeControl        timeStep;
+        writeInterval       1;
+        fields              (pointDisplacement);
+        operation           average;
+        writeFields         true;
+    }
+
+    #include "ensightWrite"
+}
+

@@ -1,0 +1,4 @@
+11:01:08 cfdm-MS-7A15 __main__.renumberMesh-DA6P353RM3F8[598810:MainThread] INFO Indirect proxy 598810 child process 598816 started
+11:01:08 cfdm-MS-7A15 __main__.renumberMesh-DA6P353RM3F8[598810:MainThread] INFO Waiting for child process 598816 to complete
+11:01:08 cfdm-MS-7A15 __main__.renumberMesh-DA6P353RM3F8[598810:MainThread] INFO Indirect proxy 598810 child process 598816 complete. return code: 127
+11:01:08 cfdm-MS-7A15 __main__.renumberMesh-DA6P353RM3F8[598810:MainThread] INFO Performing cleanup

@@ -1,0 +1,960 @@
+{
+  "schema info": {
+    "schema_name": "entity manifest",
+    "version": "0.0.4"
+  },
+  "experiment": {
+    "name": "mesh-motion",
+    "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion",
+    "launcher": "Local",
+    "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/logs/smartsim.out",
+    "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/logs/smartsim.err"
+  },
+  "runs": [
+    {
+      "run_id": "1d933fc",
+      "timestamp": 1750675333881110021,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/1d933fc/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/1d933fc/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/1d933fc/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1099963",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "88d9d5b",
+      "timestamp": 1750675634944203263,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/88d9d5b/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/88d9d5b/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/88d9d5b/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1100077",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "e046861",
+      "timestamp": 1750676165292453027,
+      "model": [
+        {
+          "name": "of_model",
+          "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/of_model",
+          "exe_args": [
+            "-case",
+            "spinningDisk",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/e046861/model/of_model",
+            "step_id": null,
+            "task_id": "1100852",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/e046861/model/of_model/of_model.out",
+          "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/e046861/model/of_model/of_model.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "7486975",
+      "timestamp": 1750676173220455780,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/7486975/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/7486975/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/7486975/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1100822",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "ec4d3fa",
+      "timestamp": 1750676204023253380,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/ec4d3fa/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/ec4d3fa/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/ec4d3fa/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1100893",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "0ccd5f2",
+      "timestamp": 1750676204237657121,
+      "model": [
+        {
+          "name": "of_model",
+          "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/of_model",
+          "exe_args": [
+            "-case",
+            "spinningDisk",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/0ccd5f2/model/of_model",
+            "step_id": null,
+            "task_id": "1100928",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/0ccd5f2/model/of_model/of_model.out",
+          "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/0ccd5f2/model/of_model/of_model.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "fe95f3e",
+      "timestamp": 1750676740847092233,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/fe95f3e/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/fe95f3e/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/fe95f3e/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1101099",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "8a39ca9",
+      "timestamp": 1750676804048603138,
+      "model": [
+        {
+          "name": "of_model",
+          "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/of_model",
+          "exe_args": [
+            "-case",
+            "spinningDisk",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/8a39ca9/model/of_model",
+            "step_id": null,
+            "task_id": "1101224",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/8a39ca9/model/of_model/of_model.out",
+          "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/8a39ca9/model/of_model/of_model.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "fbf67fc",
+      "timestamp": 1750676812483958529,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/fbf67fc/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/fbf67fc/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/fbf67fc/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1101194",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "1d03354",
+      "timestamp": 1750676837034638278,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/1d03354/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/1d03354/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/1d03354/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1101263",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "7b7f778",
+      "timestamp": 1750676837254612431,
+      "model": [
+        {
+          "name": "of_model",
+          "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/of_model",
+          "exe_args": [
+            "-case",
+            "spinningDisk",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/7b7f778/model/of_model",
+            "step_id": null,
+            "task_id": "1101297",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/7b7f778/model/of_model/of_model.out",
+          "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/7b7f778/model/of_model/of_model.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "8183256",
+      "timestamp": 1750677014399690038,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/8183256/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/8183256/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/8183256/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1101388",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "bf94d73",
+      "timestamp": 1750677062446466182,
+      "model": [
+        {
+          "name": "of_model",
+          "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/of_model",
+          "exe_args": [
+            "-case",
+            "spinningDisk",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/bf94d73/model/of_model",
+            "step_id": null,
+            "task_id": "1101513",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/bf94d73/model/of_model/of_model.out",
+          "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/bf94d73/model/of_model/of_model.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "9dce0b0",
+      "timestamp": 1750677070815839607,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/9dce0b0/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/9dce0b0/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/9dce0b0/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1101482",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "9947fc1",
+      "timestamp": 1750677091670491133,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/9947fc1/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/9947fc1/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/9947fc1/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1101555",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "b0e3749",
+      "timestamp": 1750677091890616119,
+      "model": [
+        {
+          "name": "of_model",
+          "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/of_model",
+          "exe_args": [
+            "-case",
+            "spinningDisk",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/b0e3749/model/of_model",
+            "step_id": null,
+            "task_id": "1101592",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/b0e3749/model/of_model/of_model.out",
+          "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/b0e3749/model/of_model/of_model.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "c4ba4c7",
+      "timestamp": 1750677134652449636,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/c4ba4c7/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/c4ba4c7/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/c4ba4c7/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1101615",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "28a24ab",
+      "timestamp": 1750677195812606547,
+      "model": [
+        {
+          "name": "of_model",
+          "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/of_model",
+          "exe_args": [
+            "-case",
+            "spinningDisk",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/28a24ab/model/of_model",
+            "step_id": null,
+            "task_id": "1101736",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/28a24ab/model/of_model/of_model.out",
+          "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/28a24ab/model/of_model/of_model.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "579d169",
+      "timestamp": 1750677204567961619,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/579d169/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/579d169/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/579d169/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1101706",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "8a4ac3e",
+      "timestamp": 1750677483542738172,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/8a4ac3e/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/8a4ac3e/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/8a4ac3e/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1101810",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "9fefd36",
+      "timestamp": 1750678354651543936,
+      "model": [
+        {
+          "name": "of_model",
+          "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/of_model",
+          "exe_args": [
+            "-case",
+            "spinningDisk",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/9fefd36/model/of_model",
+            "step_id": null,
+            "task_id": "1102032",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/9fefd36/model/of_model/of_model.out",
+          "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/9fefd36/model/of_model/of_model.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "f42a5b4",
+      "timestamp": 1750678362846835553,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/f42a5b4/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/f42a5b4/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/f42a5b4/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1102011",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "3503981",
+      "timestamp": 1750678966780285056,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8010,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/3503981/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/3503981/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/3503981/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1102152",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "d7e825d",
+      "timestamp": 1750679088703793385,
+      "model": [
+        {
+          "name": "of_model",
+          "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/of_model",
+          "exe_args": [
+            "-case",
+            "spinningDisk",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/d7e825d/model/of_model",
+            "step_id": null,
+            "task_id": "1102222",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/d7e825d/model/of_model/of_model.out",
+          "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/d7e825d/model/of_model/of_model.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "df31b25",
+      "timestamp": 1750679334654639604,
+      "model": [
+        {
+          "name": "of_model",
+          "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/of_model",
+          "exe_args": [
+            "-case",
+            "spinningDisk",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/df31b25/model/of_model",
+            "step_id": null,
+            "task_id": "1102346",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/df31b25/model/of_model/of_model.out",
+          "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/.smartsim/telemetry/mesh-motion/df31b25/model/of_model/of_model.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    }
+  ]
+}

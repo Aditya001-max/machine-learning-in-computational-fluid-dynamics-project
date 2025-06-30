@@ -1,0 +1,8 @@
+{
+  "timestamp": 1750675324291,
+  "job_id": 1099963,
+  "step_id": "",
+  "type": "dbnode",
+  "action": "start",
+  "detail": "Proxy process 1099963 started child process 1099974"
+}

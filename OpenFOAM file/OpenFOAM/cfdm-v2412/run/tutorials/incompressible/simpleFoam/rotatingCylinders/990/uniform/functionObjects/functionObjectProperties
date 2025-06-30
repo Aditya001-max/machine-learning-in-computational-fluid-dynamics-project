@@ -1,0 +1,76 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "990/uniform/functionObjects";
+    object      functionObjectProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+cdf7e925f5746741c316f5fbcf39ad0dfca90775
+{
+    sample1
+    {
+        scalar
+        {
+            average(centreLine,p) 1688.967223998776;
+            min(centreLine,p) -0.04466787268210673;
+            max(centreLine,p) 2139.945684009328;
+            average(p)      1688.967223998776;
+            min(p)          -0.04466787268210673;
+            max(p)          2139.945684009328;
+        }
+        label
+        {
+            size(centreLine,p) 20;
+            size(p)         20;
+            size(centreLine,U) 20;
+            size(U)         20;
+            size(centreLine,U:Transformed) 20;
+            size(U:Transformed) 20;
+        }
+        vector
+        {
+            average(centreLine,U) ( -0.00155236 42.7064 9.80328e-20 );
+            min(centreLine,U) ( -0.00546903 7.58184e-14 -7.75639e-20 );
+            max(centreLine,U) ( 0.00128084 99.9615 4.91157e-19 );
+            average(U)      ( -0.00155236 42.7064 9.80328e-20 );
+            min(U)          ( -0.00546903 7.58184e-14 -7.75639e-20 );
+            max(U)          ( 0.00128084 99.9615 4.91157e-19 );
+            average(centreLine,U:Transformed) ( -0.00155236 42.7064 9.80328e-20 );
+            min(centreLine,U:Transformed) ( -0.00546903 7.58184e-14 -7.75639e-20 );
+            max(centreLine,U:Transformed) ( 0.00128084 99.9615 4.91157e-19 );
+            average(U:Transformed) ( -0.00155236 42.7064 9.80328e-20 );
+            min(U:Transformed) ( -0.00546903 7.58184e-14 -7.75639e-20 );
+            max(U:Transformed) ( 0.00128084 99.9615 4.91157e-19 );
+        }
+    }
+}
+
+sample1
+{
+    p
+    {
+        file            "<case>/postProcessing/sample1/990/centreLine_p_U_U:Transformed.xy";
+    }
+    U
+    {
+        file            "<case>/postProcessing/sample1/990/centreLine_p_U_U:Transformed.xy";
+    }
+    U:Transformed
+    {
+        file            "<case>/postProcessing/sample1/990/centreLine_p_U_U:Transformed.xy";
+    }
+}
+
+
+// ************************************************************************* //

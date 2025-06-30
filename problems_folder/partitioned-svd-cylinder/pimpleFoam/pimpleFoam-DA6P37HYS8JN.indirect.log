@@ -1,0 +1,4 @@
+11:01:13 cfdm-MS-7A15 __main__.pimpleFoam-DA6P37HYS8JN[598827:MainThread] INFO Indirect proxy 598827 child process 598833 started
+11:01:13 cfdm-MS-7A15 __main__.pimpleFoam-DA6P37HYS8JN[598827:MainThread] INFO Waiting for child process 598833 to complete
+11:01:14 cfdm-MS-7A15 __main__.pimpleFoam-DA6P37HYS8JN[598827:MainThread] INFO Indirect proxy 598827 child process 598833 complete. return code: 127
+11:01:14 cfdm-MS-7A15 __main__.pimpleFoam-DA6P37HYS8JN[598827:MainThread] INFO Performing cleanup

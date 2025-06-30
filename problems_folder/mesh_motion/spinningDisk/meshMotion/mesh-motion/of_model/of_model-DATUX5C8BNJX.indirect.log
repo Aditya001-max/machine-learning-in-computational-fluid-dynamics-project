@@ -1,0 +1,4 @@
+16:26:44 cfdm-MS-7A15 __main__.of_model-DATUX5C8BNJX[1100928:MainThread] INFO Indirect proxy 1100928 child process 1100934 started
+16:26:44 cfdm-MS-7A15 __main__.of_model-DATUX5C8BNJX[1100928:MainThread] INFO Waiting for child process 1100934 to complete
+16:26:44 cfdm-MS-7A15 __main__.of_model-DATUX5C8BNJX[1100928:MainThread] INFO Indirect proxy 1100928 child process 1100934 complete. return code: 127
+16:26:44 cfdm-MS-7A15 __main__.of_model-DATUX5C8BNJX[1100928:MainThread] INFO Performing cleanup

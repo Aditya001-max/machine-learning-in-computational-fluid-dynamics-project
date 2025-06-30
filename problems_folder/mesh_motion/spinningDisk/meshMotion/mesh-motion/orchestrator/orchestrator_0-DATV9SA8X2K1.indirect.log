@@ -1,0 +1,4 @@
+16:43:14 cfdm-MS-7A15 __main__.orchestrator_0-DATV9SA8X2K1[1101706:MainThread] INFO Indirect proxy 1101706 child process 1101717 started
+16:43:14 cfdm-MS-7A15 __main__.orchestrator_0-DATV9SA8X2K1[1101706:MainThread] INFO Waiting for child process 1101717 to complete
+16:44:38 cfdm-MS-7A15 __main__.orchestrator_0-DATV9SA8X2K1[1101706:MainThread] INFO Indirect proxy 1101706 child process 1101717 complete. return code: 0
+16:44:38 cfdm-MS-7A15 __main__.orchestrator_0-DATV9SA8X2K1[1101706:MainThread] INFO Performing cleanup

@@ -1,0 +1,4 @@
+17:02:35 cfdm-MS-7A15 __main__.of_model-DATVOL83K854[1102032:MainThread] INFO Indirect proxy 1102032 child process 1102039 started
+17:02:35 cfdm-MS-7A15 __main__.of_model-DATVOL83K854[1102032:MainThread] INFO Waiting for child process 1102039 to complete
+17:02:35 cfdm-MS-7A15 __main__.of_model-DATVOL83K854[1102032:MainThread] INFO Indirect proxy 1102032 child process 1102039 complete. return code: 127
+17:02:35 cfdm-MS-7A15 __main__.of_model-DATVOL83K854[1102032:MainThread] INFO Performing cleanup

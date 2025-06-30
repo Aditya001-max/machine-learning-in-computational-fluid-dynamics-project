@@ -1,0 +1,4 @@
+15:11:40 cfdm-MS-7A15 __main__.cp-DAA8X551P1RB[678783:MainThread] INFO Indirect proxy 678783 child process 678790 started
+15:11:40 cfdm-MS-7A15 __main__.cp-DAA8X551P1RB[678783:MainThread] INFO Waiting for child process 678790 to complete
+15:11:40 cfdm-MS-7A15 __main__.cp-DAA8X551P1RB[678783:MainThread] INFO Indirect proxy 678783 child process 678790 complete. return code: 1
+15:11:40 cfdm-MS-7A15 __main__.cp-DAA8X551P1RB[678783:MainThread] INFO Performing cleanup

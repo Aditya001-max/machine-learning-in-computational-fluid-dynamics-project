@@ -1,0 +1,4 @@
+15:12:46 cfdm-MS-7A15 __main__.svd_ensemble_4_0-DAA8XZGSXJ4B[678906:MainThread] INFO Indirect proxy 678906 child process 678913 started
+15:12:46 cfdm-MS-7A15 __main__.svd_ensemble_4_0-DAA8XZGSXJ4B[678906:MainThread] INFO Waiting for child process 678913 to complete
+15:12:46 cfdm-MS-7A15 __main__.svd_ensemble_4_0-DAA8XZGSXJ4B[678906:MainThread] INFO Indirect proxy 678906 child process 678913 complete. return code: 1
+15:12:46 cfdm-MS-7A15 __main__.svd_ensemble_4_0-DAA8XZGSXJ4B[678906:MainThread] INFO Performing cleanup

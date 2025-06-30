@@ -1,0 +1,2360 @@
+[cfdm-MS-7A15:1102275] PMIX ERROR: UNREACHABLE in file ../../../src/server/pmix_server.c at line 2193
+[cfdm-MS-7A15:1102275] 3 more processes have sent help message help-mpi-api.txt / mpi-abort
+[cfdm-MS-7A15:1102275] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+(clean_bo_env) openfoam2412:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/
+cfdm$ mpirun -np 4 moveDynamicMesh -parallel
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _2c4871ff-20250317 OPENFOAM=2412 version=2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : moveDynamicMesh -parallel
+Date   : Jun 23 2025
+Time   : 17:18:40
+Host   : cfdm-MS-7A15
+PID    : 1102300
+I/O    : uncollated
+Case   : /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk
+nProcs : 4
+Hosts  :
+(
+    (cfdm-MS-7A15 4)
+)
+Pstream initialized with:
+    floatTransfer      : false
+    maxCommsSize       : 0
+    nProcsSimpleSum    : 0
+    nonBlockingExchange: 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Overriding DebugSwitches according to controlDict
+    displacementLaplacian (unregistered)
+Create dynamic mesh for time = 0
+Selecting dynamicFvMesh dynamicMotionSolverFvMesh
+Selecting motion solver: displacementLaplacian
+Applying motion to entire mesh
+Selecting solid-body motion function oscillatingRotatingMotion
+Selecting motion diffusion: inverseDistance
+Selecting patchDistMethod meshWave
+
+
+PIMPLE: Operating solver in PISO mode
+
+Time = 0.01
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 1, Final residual = 1.37928e-16, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 1, Final residual = 1.28335e-16, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (4.79725e-18 7.9296e-18 3.33451e-17) OK.
+    Max cell openness = 1.90365e-16 OK.
+    Max aspect ratio = 11.0771 OK.
+    Minimum face area = 0.0133872. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133872. Max volume = 0.0520439.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 42.9661 average: 22.0582
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25564 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+Time = 0.02
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.333269, Final residual = 7.16075e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.333269, Final residual = 7.91705e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (3.98025e-18 0 2.92093e-17) OK.
+    Max cell openness = 2.08364e-16 OK.
+    Max aspect ratio = 11.1175 OK.
+    Minimum face area = 0.0133846. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133846. Max volume = 0.0521293.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.0779 average: 22.0639
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25542 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+Time = 0.03
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.199885, Final residual = 3.4838e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.199885, Final residual = 4.12361e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-5.56567e-19 -5.94704e-18 -4.77004e-17) OK.
+    Max cell openness = 1.76113e-16 OK.
+    Max aspect ratio = 11.1553 OK.
+    Minimum face area = 0.0133831. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133831. Max volume = 0.0521689.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.1352 average: 22.077
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25565 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+Time = 0.04
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.142692, Final residual = 3.9068e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.142693, Final residual = 4.05105e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (5.07964e-18 0 4.52366e-17) OK.
+    Max cell openness = 2.04876e-16 OK.
+    Max aspect ratio = 11.1953 OK.
+    Minimum face area = 0.0133808. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133808. Max volume = 0.0522427.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.2265 average: 22.0921
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25532 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.13 s  ClockTime = 0 s
+
+Time = 0.05
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.110898, Final residual = 3.16534e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.110898, Final residual = 2.19079e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.38488e-18 1.98224e-18 -9.50242e-17) OK.
+    Max cell openness = 2.1623e-16 OK.
+    Max aspect ratio = 11.233 OK.
+    Minimum face area = 0.0133784. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133784. Max volume = 0.0522678.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.2751 average: 22.1148
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25535 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+Time = 0.06
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0906472, Final residual = 3.0897e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0906473, Final residual = 2.93212e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (6.50398e-19 -5.9465e-18 2.66213e-17) OK.
+    Max cell openness = 1.5881e-16 OK.
+    Max aspect ratio = 11.2731 OK.
+    Minimum face area = 0.0133756. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133756. Max volume = 0.0523367.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.3608 average: 22.1399
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25524 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+Time = 0.07
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.07663, Final residual = 1.91871e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0766301, Final residual = 1.2953e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (9.22906e-18 -7.92832e-18 -6.89696e-17) OK.
+    Max cell openness = 2.13694e-16 OK.
+    Max aspect ratio = 11.311 OK.
+    Minimum face area = 0.0133732. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133732. Max volume = 0.0523581.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.4055 average: 22.1718
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25533 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.15 s  ClockTime = 0 s
+
+Time = 0.08
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0663843, Final residual = 1.72511e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0663843, Final residual = 2.35798e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-2.66328e-18 -5.94594e-18 -1.57165e-17) OK.
+    Max cell openness = 1.85867e-16 OK.
+    Max aspect ratio = 11.3511 OK.
+    Minimum face area = 0.0133701. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133701. Max volume = 0.0524259.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.5035 average: 22.2061
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25538 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.15 s  ClockTime = 0 s
+
+Time = 0.09
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0585379, Final residual = 2.56876e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.058538, Final residual = 1.78025e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.6012e-18 -5.9456e-18 -1.89509e-17) OK.
+    Max cell openness = 2.18678e-16 OK.
+    Max aspect ratio = 11.3891 OK.
+    Minimum face area = 0.0133677. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133677. Max volume = 0.0524453.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.5328 average: 22.2473
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25561 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.16 s  ClockTime = 0 s
+
+Time = 0.1
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0523331, Final residual = 2.15417e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0523332, Final residual = 2.22347e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (7.24574e-18 3.96348e-18 1.45182e-17) OK.
+    Max cell openness = 1.8001e-16 OK.
+    Max aspect ratio = 11.4293 OK.
+    Minimum face area = 0.0133643. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133643. Max volume = 0.0525124.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.6295 average: 22.2904
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25541 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.18 s  ClockTime = 0 s
+
+Time = 0.11
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.047301, Final residual = 2.49881e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0473011, Final residual = 1.68193e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.41508e-18 0 -8.87394e-17) OK.
+    Max cell openness = 2.24363e-16 OK.
+    Max aspect ratio = 11.4673 OK.
+    Minimum face area = 0.0133618. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133618. Max volume = 0.0525303.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.6584 average: 22.3401
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25565 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.18 s  ClockTime = 0 s
+
+Time = 0.12
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0431355, Final residual = 1.59221e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0431355, Final residual = 1.80013e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-8.11156e-18 -5.94435e-18 1.05748e-17) OK.
+    Max cell openness = 1.92814e-16 OK.
+    Max aspect ratio = 11.5076 OK.
+    Minimum face area = 0.0133583. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133583. Max volume = 0.0525967.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.7541 average: 22.3918
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25543 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.18 s  ClockTime = 0 s
+
+Time = 0.13
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0396248, Final residual = 1.17908e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0396248, Final residual = 1.30391e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (7.42983e-19 -1.18877e-17 1.01185e-16) OK.
+    Max cell openness = 2.13524e-16 OK.
+    Max aspect ratio = 11.5456 OK.
+    Minimum face area = 0.0133556. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133556. Max volume = 0.0526132.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.7826 average: 22.4495
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25569 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.19 s  ClockTime = 0 s
+
+Time = 0.14
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0366185, Final residual = 9.97103e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0366185, Final residual = 1.49508e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (4.82896e-18 -9.90556e-18 -7.50714e-17) OK.
+    Max cell openness = 2.05027e-16 OK.
+    Max aspect ratio = 11.5858 OK.
+    Minimum face area = 0.013352. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.013352. Max volume = 0.052679.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.8782 average: 22.5095
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25543 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.2 s  ClockTime = 0 s
+
+Time = 0.15
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.034016, Final residual = 8.30192e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0340161, Final residual = 9.45675e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.91902e-18 9.90462e-18 4.2002e-17) OK.
+    Max cell openness = 2.14687e-16 OK.
+    Max aspect ratio = 11.6236 OK.
+    Minimum face area = 0.0133492. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133492. Max volume = 0.0526852.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.8986 average: 22.5747
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25575 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.2 s  ClockTime = 0 s
+
+Time = 0.16
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0317432, Final residual = 1.05246e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0317432, Final residual = 9.28904e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.13273e-17 0 -6.35095e-17) OK.
+    Max cell openness = 2.07846e-16 OK.
+    Max aspect ratio = 11.6637 OK.
+    Minimum face area = 0.0133455. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133455. Max volume = 0.0527557.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 43.9994 average: 22.6426
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25549 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.21 s  ClockTime = 0 s
+
+Time = 0.17
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.02974, Final residual = 1.10694e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0297401, Final residual = 1.1945e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.22808e-18 3.96103e-18 -6.62372e-17) OK.
+    Max cell openness = 2.01646e-16 OK.
+    Max aspect ratio = 11.7018 OK.
+    Minimum face area = 0.0133418. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133418. Max volume = 0.0527611.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.0147 average: 22.7162
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25579 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.22 s  ClockTime = 0 s
+
+Time = 0.18
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0279604, Final residual = 1.38971e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0279603, Final residual = 9.45818e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-5.69334e-18 1.98029e-18 -7.56775e-18) OK.
+    Max cell openness = 2.04757e-16 OK.
+    Max aspect ratio = 11.7413 OK.
+    Minimum face area = 0.0133386. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133386. Max volume = 0.0528336.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.1199 average: 22.7905
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25555 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.22 s  ClockTime = 0 s
+
+Time = 0.19
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0263679, Final residual = 9.76011e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0263679, Final residual = 1.0868e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (8.66276e-19 0 1.95792e-17) OK.
+    Max cell openness = 2.21732e-16 OK.
+    Max aspect ratio = 11.7793 OK.
+    Minimum face area = 0.0133351. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133351. Max volume = 0.0528381.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.1345 average: 22.8707
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25589 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.23 s  ClockTime = 0 s
+
+Time = 0.2
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0249447, Final residual = 1.71096e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0249446, Final residual = 1.75237e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (9.03289e-18 0 -4.00893e-17) OK.
+    Max cell openness = 1.90023e-16 OK.
+    Max aspect ratio = 11.8181 OK.
+    Minimum face area = 0.0133319. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133319. Max volume = 0.0529106.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.2391 average: 22.9516
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25564 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.24 s  ClockTime = 0 s
+
+Time = 0.21
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0236659, Final residual = 1.66844e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0236659, Final residual = 1.39232e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.48467e-18 -7.91824e-18 -8.35136e-17) OK.
+    Max cell openness = 1.97762e-16 OK.
+    Max aspect ratio = 11.8551 OK.
+    Minimum face area = 0.0133284. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133284. Max volume = 0.0529119.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.2522 average: 23.0379
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25601 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.24 s  ClockTime = 0 s
+
+Time = 0.22
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0225016, Final residual = 1.93824e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0225015, Final residual = 1.9305e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-2.84523e-18 1.97929e-18 -9.25136e-19) OK.
+    Max cell openness = 2.1641e-16 OK.
+    Max aspect ratio = 11.8946 OK.
+    Minimum face area = 0.0133246. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133246. Max volume = 0.0529841.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.3566 average: 23.125
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25576 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.25 s  ClockTime = 0 s
+
+Time = 0.23
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0214363, Final residual = 1.84101e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0214362, Final residual = 1.78855e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.1132e-18 3.95804e-18 6.47503e-17) OK.
+    Max cell openness = 2.00711e-16 OK.
+    Max aspect ratio = 11.9311 OK.
+    Minimum face area = 0.013322. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.013322. Max volume = 0.0529846.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.3694 average: 23.217
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25615 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.26 s  ClockTime = 0 s
+
+Time = 0.24
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0204575, Final residual = 1.28381e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0204574, Final residual = 2.06725e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-7.04923e-18 1.18724e-17 1.49323e-18) OK.
+    Max cell openness = 1.94212e-16 OK.
+    Max aspect ratio = 11.9701 OK.
+    Minimum face area = 0.0133198. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133198. Max volume = 0.0530559.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.4718 average: 23.3084
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25589 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.26 s  ClockTime = 0 s
+
+Time = 0.25
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0195544, Final residual = 1.22098e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0195545, Final residual = 1.28606e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.73113e-18 0 5.59314e-17) OK.
+    Max cell openness = 2.04881e-16 OK.
+    Max aspect ratio = 12.0059 OK.
+    Minimum face area = 0.0133156. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133156. Max volume = 0.0530531.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.4857 average: 23.4062
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25634 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.27 s  ClockTime = 0 s
+
+Time = 0.26
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0187184, Final residual = 7.30032e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0187184, Final residual = 8.9902e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-2.2254e-18 1.97813e-18 -1.9711e-17) OK.
+    Max cell openness = 2.05618e-16 OK.
+    Max aspect ratio = 12.0447 OK.
+    Minimum face area = 0.0133129. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133129. Max volume = 0.0531064.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.5612 average: 23.5032
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25654 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.27 s  ClockTime = 0 s
+
+Time = 0.27
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0179416, Final residual = 6.10318e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0179418, Final residual = 9.54644e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (6.67514e-18 -7.91127e-18 2.8505e-17) OK.
+    Max cell openness = 2.0789e-16 OK.
+    Max aspect ratio = 12.0801 OK.
+    Minimum face area = 0.0133099. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133099. Max volume = 0.0531343.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.6037 average: 23.6047
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25657 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.28 s  ClockTime = 0 s
+
+Time = 0.28
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0172178, Final residual = 9.85185e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.017218, Final residual = 7.24881e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.22358e-17 5.93249e-18 2.43747e-17) OK.
+    Max cell openness = 1.89476e-16 OK.
+    Max aspect ratio = 12.1214 OK.
+    Minimum face area = 0.0133061. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133061. Max volume = 0.0531802.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.6682 average: 23.7066
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25672 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.29 s  ClockTime = 0 s
+
+Time = 0.29
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0165412, Final residual = 6.90379e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0165416, Final residual = 6.65193e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.11216e-18 -3.95433e-18 -4.69456e-18) OK.
+    Max cell openness = 1.65333e-16 OK.
+    Max aspect ratio = 12.1713 OK.
+    Minimum face area = 0.0133039. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0133039. Max volume = 0.0531839.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.7055 average: 23.8131
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25676 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.29 s  ClockTime = 0 s
+
+Time = 0.3
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0159073, Final residual = 8.3365e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0159076, Final residual = 7.90435e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (6.42469e-18 1.38378e-17 -7.48502e-18) OK.
+    Max cell openness = 1.95192e-16 OK.
+    Max aspect ratio = 12.2242 OK.
+    Minimum face area = 0.0132995. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132995. Max volume = 0.0532395.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.7759 average: 23.9193
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25691 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.3 s  ClockTime = 0 s
+
+Time = 0.31
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0153116, Final residual = 8.68389e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.015312, Final residual = 5.90999e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (9.3883e-18 6.17651e-18 -1.1283e-17) OK.
+    Max cell openness = 2.06509e-16 OK.
+    Max aspect ratio = 12.2747 OK.
+    Minimum face area = 0.013298. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.013298. Max volume = 0.0532457.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.8139 average: 24.0283
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25696 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.5 s  ClockTime = 1 s
+
+Time = 0.32
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0147507, Final residual = 8.3008e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.014751, Final residual = 9.01786e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.4821e-18 3.95226e-18 -4.33205e-17) OK.
+    Max cell openness = 2.19794e-16 OK.
+    Max aspect ratio = 12.3273 OK.
+    Minimum face area = 0.013294. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.013294. Max volume = 0.0533009.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.9029 average: 24.1373
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.2569 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.5 s  ClockTime = 1 s
+
+Time = 0.33
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0142212, Final residual = 5.26548e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0142216, Final residual = 4.72365e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (3.08714e-18 -3.95154e-18 3.73477e-17) OK.
+    Max cell openness = 2.20484e-16 OK.
+    Max aspect ratio = 12.3778 OK.
+    Minimum face area = 0.0132922. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132922. Max volume = 0.0533066.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 44.9208 average: 24.2492
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25716 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.51 s  ClockTime = 1 s
+
+Time = 0.34
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0137307, Final residual = 1.20514e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.013731, Final residual = 5.65155e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (4.07427e-18 2.46926e-18 2.10726e-17) OK.
+    Max cell openness = 1.75383e-16 OK.
+    Max aspect ratio = 12.4348 OK.
+    Minimum face area = 0.0132901. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132901. Max volume = 0.0533616.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.0143 average: 24.3595
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25707 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.51 s  ClockTime = 1 s
+
+Time = 0.35
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0132658, Final residual = 1.6802e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0132661, Final residual = 6.01556e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.11096e-18 5.67822e-18 -4.89698e-17) OK.
+    Max cell openness = 1.97068e-16 OK.
+    Max aspect ratio = 12.4903 OK.
+    Minimum face area = 0.0132867. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132867. Max volume = 0.053363.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.0266 average: 24.4744
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25739 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.52 s  ClockTime = 1 s
+
+Time = 0.36
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0128243, Final residual = 1.73337e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0128245, Final residual = 1.16108e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (6.91129e-18 0 1.60643e-17) OK.
+    Max cell openness = 2.14515e-16 OK.
+    Max aspect ratio = 12.5471 OK.
+    Minimum face area = 0.0132847. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132847. Max volume = 0.0534207.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.1201 average: 24.5875
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25729 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.53 s  ClockTime = 1 s
+
+Time = 0.37
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0124039, Final residual = 1.97737e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0124042, Final residual = 1.13283e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-8.88422e-18 -1.97427e-18 8.75162e-17) OK.
+    Max cell openness = 1.98133e-16 OK.
+    Max aspect ratio = 12.6022 OK.
+    Minimum face area = 0.0132811. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132811. Max volume = 0.0534186.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.1311 average: 24.7038
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25764 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.53 s  ClockTime = 1 s
+
+Time = 0.38
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0120032, Final residual = 1.49195e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0120035, Final residual = 1.52462e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.48041e-18 3.94777e-18 -2.39902e-17) OK.
+    Max cell openness = 2.07317e-16 OK.
+    Max aspect ratio = 12.6586 OK.
+    Minimum face area = 0.0132794. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132794. Max volume = 0.0534671.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.201 average: 24.8179
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25735 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.54 s  ClockTime = 1 s
+
+Time = 0.39
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0116206, Final residual = 1.71715e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0116208, Final residual = 1.20203e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (3.94698e-18 1.97349e-18 -8.37187e-17) OK.
+    Max cell openness = 1.9603e-16 OK.
+    Max aspect ratio = 12.7132 OK.
+    Minimum face area = 0.013275. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.013275. Max volume = 0.0534694.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.2305 average: 24.9349
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25772 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.54 s  ClockTime = 1 s
+
+Time = 0.4
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0112543, Final residual = 1.12167e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0112544, Final residual = 1.77765e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (4.93273e-18 -1.97309e-18 -2.85877e-17) OK.
+    Max cell openness = 2.05831e-16 OK.
+    Max aspect ratio = 12.7693 OK.
+    Minimum face area = 0.0132735. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132735. Max volume = 0.0535168.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.2976 average: 25.0504
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25761 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.55 s  ClockTime = 1 s
+
+Time = 0.41
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0109014, Final residual = 2.04683e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0109015, Final residual = 6.60667e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (5.91808e-18 3.94539e-18 -5.16305e-17) OK.
+    Max cell openness = 2.19373e-16 OK.
+    Max aspect ratio = 12.8232 OK.
+    Minimum face area = 0.0132694. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132694. Max volume = 0.0535184.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.3272 average: 25.1681
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25801 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.55 s  ClockTime = 1 s
+
+Time = 0.42
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0105614, Final residual = 1.5635e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0105615, Final residual = 1.3387e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.71189e-18 -5.91686e-18 -2.94225e-17) OK.
+    Max cell openness = 1.96364e-16 OK.
+    Max aspect ratio = 12.8785 OK.
+    Minimum face area = 0.0132685. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132685. Max volume = 0.0535637.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.391 average: 25.2836
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25788 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.56 s  ClockTime = 1 s
+
+Time = 0.43
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.010235, Final residual = 1.89615e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.010235, Final residual = 1.1403e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.21836e-18 7.88752e-18 3.15202e-17) OK.
+    Max cell openness = 1.9104e-16 OK.
+    Max aspect ratio = 12.9318 OK.
+    Minimum face area = 0.013264. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.013264. Max volume = 0.0535735.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.4268 average: 25.4015
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25827 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.57 s  ClockTime = 1 s
+
+Time = 0.44
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00992126, Final residual = 1.40823e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00992132, Final residual = 1.63821e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-2.71077e-18 1.97147e-18 -3.7495e-17) OK.
+    Max cell openness = 2.09573e-16 OK.
+    Max aspect ratio = 12.9864 OK.
+    Minimum face area = 0.0132621. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132621. Max volume = 0.0536046.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.4869 average: 25.518
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25841 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.57 s  ClockTime = 1 s
+
+Time = 0.45
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00961933, Final residual = 1.9867e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00961932, Final residual = 1.2613e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-4.18849e-18 0 -1.34856e-17) OK.
+    Max cell openness = 2.03332e-16 OK.
+    Max aspect ratio = 13.038 OK.
+    Minimum face area = 0.0132579. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132579. Max volume = 0.0536169.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.5254 average: 25.6354
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.2586 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.58 s  ClockTime = 1 s
+
+Time = 0.46
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0093284, Final residual = 1.49292e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00932845, Final residual = 1.66532e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.33018e-17 0 -1.04464e-17) OK.
+    Max cell openness = 2.02797e-16 OK.
+    Max aspect ratio = 13.0913 OK.
+    Minimum face area = 0.0132557. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132557. Max volume = 0.0536472.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.5902 average: 25.7516
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25871 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.58 s  ClockTime = 1 s
+
+Time = 0.47
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0090478, Final residual = 1.89352e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00904779, Final residual = 7.47536e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.70906e-18 1.42841e-17 -1.47613e-17) OK.
+    Max cell openness = 2.10191e-16 OK.
+    Max aspect ratio = 13.1423 OK.
+    Minimum face area = 0.0132517. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132517. Max volume = 0.0536604.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.642 average: 25.868
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25892 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.59 s  ClockTime = 1 s
+
+Time = 0.48
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00877684, Final residual = 1.72582e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00877688, Final residual = 1.39633e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (7.38678e-19 0 5.33656e-17) OK.
+    Max cell openness = 2.202e-16 OK.
+    Max aspect ratio = 13.1948 OK.
+    Minimum face area = 0.0132498. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132498. Max volume = 0.0536862.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.7006 average: 25.9833
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25902 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.6 s  ClockTime = 1 s
+
+Time = 0.49
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00851908, Final residual = 1.80791e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00851905, Final residual = 6.82656e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.00931e-17 5.90817e-18 -6.66583e-17) OK.
+    Max cell openness = 1.98155e-16 OK.
+    Max aspect ratio = 13.2447 OK.
+    Minimum face area = 0.0132456. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132456. Max volume = 0.0537009.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.7487 average: 26.0981
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25923 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.6 s  ClockTime = 1 s
+
+Time = 0.5
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00827063, Final residual = 8.10474e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00827065, Final residual = 2.06868e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-9.10649e-18 1.96897e-18 -2.73762e-18) OK.
+    Max cell openness = 2.0463e-16 OK.
+    Max aspect ratio = 13.2957 OK.
+    Minimum face area = 0.0132437. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132437. Max volume = 0.0537289.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.8065 average: 26.2131
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25919 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.61 s  ClockTime = 1 s
+
+Time = 0.51
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00802989, Final residual = 8.81143e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00802979, Final residual = 5.83765e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.96855e-18 0 3.9175e-17) OK.
+    Max cell openness = 2.0522e-16 OK.
+    Max aspect ratio = 13.3448 OK.
+    Minimum face area = 0.0132403. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132403. Max volume = 0.0537385.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.8568 average: 26.3256
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25958 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.61 s  ClockTime = 1 s
+
+Time = 0.52
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00779625, Final residual = 1.19021e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00779619, Final residual = 7.69534e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-7.3805e-19 -1.18088e-17 5.23554e-18) OK.
+    Max cell openness = 2.12835e-16 OK.
+    Max aspect ratio = 13.3948 OK.
+    Minimum face area = 0.0132382. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132382. Max volume = 0.0537671.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.9142 average: 26.4395
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25951 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.62 s  ClockTime = 1 s
+
+Time = 0.53
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00756948, Final residual = 1.06474e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00756925, Final residual = 1.08203e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.96772e-18 0 -4.77608e-17) OK.
+    Max cell openness = 1.89598e-16 OK.
+    Max aspect ratio = 13.4427 OK.
+    Minimum face area = 0.0132354. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132354. Max volume = 0.0537759.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 45.9633 average: 26.5495
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25991 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.62 s  ClockTime = 1 s
+
+Time = 0.54
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00734894, Final residual = 1.08118e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00734881, Final residual = 6.67005e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.45912e-18 -3.9346e-18 2.44978e-17) OK.
+    Max cell openness = 2.00309e-16 OK.
+    Max aspect ratio = 13.4915 OK.
+    Minimum face area = 0.0132334. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132334. Max volume = 0.0538038.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.0163 average: 26.6612
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.25985 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.63 s  ClockTime = 1 s
+
+Time = 0.55
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00713456, Final residual = 6.13707e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00713426, Final residual = 1.05761e-17, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-2.95033e-18 -1.18013e-17 -1.14767e-17) OK.
+    Max cell openness = 2.09992e-16 OK.
+    Max aspect ratio = 13.5382 OK.
+    Minimum face area = 0.0132306. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132306. Max volume = 0.0538068.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.0522 average: 26.7681
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26024 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.64 s  ClockTime = 1 s
+
+Time = 0.56
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00692571, Final residual = 9.29424e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00692551, Final residual = 6.04396e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-4.91617e-18 1.96647e-18 -5.10317e-17) OK.
+    Max cell openness = 2.17307e-16 OK.
+    Max aspect ratio = 13.5852 OK.
+    Minimum face area = 0.0132286. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132286. Max volume = 0.0538313.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.1107 average: 26.878
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26025 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.64 s  ClockTime = 1 s
+
+Time = 0.57
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00672233, Final residual = 8.02551e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00672206, Final residual = 8.31903e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.22879e-18 -5.89818e-18 9.50423e-17) OK.
+    Max cell openness = 2.00295e-16 OK.
+    Max aspect ratio = 13.6313 OK.
+    Minimum face area = 0.013226. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.013226. Max volume = 0.0538353.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.1634 average: 26.9826
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26056 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.65 s  ClockTime = 1 s
+
+Time = 0.58
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00652395, Final residual = 8.1767e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00652375, Final residual = 5.76037e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.15482e-17 0 1.08284e-16) OK.
+    Max cell openness = 2.01813e-16 OK.
+    Max aspect ratio = 13.6772 OK.
+    Minimum face area = 0.0132241. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132241. Max volume = 0.0538603.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.2238 average: 27.0896
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26051 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.66 s  ClockTime = 1 s
+
+Time = 0.59
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00633049, Final residual = 5.02627e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00633016, Final residual = 8.39313e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (0 -5.40442e-18 -2.70115e-17) OK.
+    Max cell openness = 1.89025e-16 OK.
+    Max aspect ratio = 13.7214 OK.
+    Minimum face area = 0.0132215. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132215. Max volume = 0.0538618.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.2737 average: 27.1912
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26088 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.66 s  ClockTime = 1 s
+
+Time = 0.6
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00614146, Final residual = 1.02013e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00614124, Final residual = 5.21979e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.45605e-18 9.8242e-19 9.48188e-17) OK.
+    Max cell openness = 1.6948e-16 OK.
+    Max aspect ratio = 13.7655 OK.
+    Minimum face area = 0.0132199. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132199. Max volume = 0.0538846.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.3283 average: 27.2955
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26089 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.67 s  ClockTime = 1 s
+
+Time = 0.61
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00595683, Final residual = 6.13303e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00595656, Final residual = 5.6102e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.39966e-17 -1.96444e-18 -1.10286e-17) OK.
+    Max cell openness = 2.1188e-16 OK.
+    Max aspect ratio = 13.8087 OK.
+    Minimum face area = 0.0132177. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132177. Max volume = 0.0538843.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.3768 average: 27.394
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26119 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.68 s  ClockTime = 1 s
+
+Time = 0.62
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00577623, Final residual = 7.77956e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00577604, Final residual = 7.17755e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.27663e-17 7.85618e-18 -2.06321e-17) OK.
+    Max cell openness = 1.6776e-16 OK.
+    Max aspect ratio = 13.8513 OK.
+    Minimum face area = 0.0132154. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132154. Max volume = 0.0539151.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.4327 average: 27.4935
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26097 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.68 s  ClockTime = 1 s
+
+Time = 0.63
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00559952, Final residual = 7.39765e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00559939, Final residual = 7.17093e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (3.92731e-18 -1.17819e-17 1.95709e-17) OK.
+    Max cell openness = 2.10649e-16 OK.
+    Max aspect ratio = 13.8927 OK.
+    Minimum face area = 0.0132143. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132143. Max volume = 0.0538884.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.4759 average: 27.5907
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26165 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.69 s  ClockTime = 1 s
+
+Time = 0.64
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00542654, Final residual = 7.19836e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00542645, Final residual = 8.78576e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.71786e-18 0 -4.11059e-18) OK.
+    Max cell openness = 1.89325e-16 OK.
+    Max aspect ratio = 13.934 OK.
+    Minimum face area = 0.0132121. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132121. Max volume = 0.0539321.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.5277 average: 27.6881
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26142 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.69 s  ClockTime = 1 s
+
+Time = 0.65
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00525702, Final residual = 6.47092e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00525703, Final residual = 7.00813e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-3.18969e-18 5.88866e-18 3.13269e-17) OK.
+    Max cell openness = 2.14803e-16 OK.
+    Max aspect ratio = 13.9736 OK.
+    Minimum face area = 0.0132105. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132105. Max volume = 0.0539072.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.5687 average: 27.7807
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26193 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.7 s  ClockTime = 1 s
+
+Time = 0.66
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00509091, Final residual = 7.69381e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00509088, Final residual = 3.1513e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (5.39689e-18 5.88752e-18 -4.39595e-17) OK.
+    Max cell openness = 2.14177e-16 OK.
+    Max aspect ratio = 14.0134 OK.
+    Minimum face area = 0.013209. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.013209. Max volume = 0.0539514.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.6176 average: 27.8744
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26174 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.71 s  ClockTime = 1 s
+
+Time = 0.67
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00492792, Final residual = 5.59802e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00492796, Final residual = 5.9894e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.96214e-18 3.92428e-18 -2.39023e-17) OK.
+    Max cell openness = 1.89377e-16 OK.
+    Max aspect ratio = 14.0513 OK.
+    Minimum face area = 0.0132071. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132071. Max volume = 0.0539294.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.6652 average: 27.9631
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26226 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.72 s  ClockTime = 1 s
+
+Time = 0.68
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00476908, Final residual = 4.59398e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00476907, Final residual = 2.70373e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (6.8662e-18 -9.80885e-19 -1.14542e-16) OK.
+    Max cell openness = 2.11804e-16 OK.
+    Max aspect ratio = 14.0894 OK.
+    Minimum face area = 0.0132064. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132064. Max volume = 0.0539714.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.7199 average: 28.0528
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26207 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.73 s  ClockTime = 1 s
+
+Time = 0.69
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00461382, Final residual = 5.23223e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00461386, Final residual = 3.90365e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.71624e-18 -7.84565e-18 -1.30741e-17) OK.
+    Max cell openness = 2.1924e-16 OK.
+    Max aspect ratio = 14.1256 OK.
+    Minimum face area = 0.0132046. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132046. Max volume = 0.0539466.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.7692 average: 28.1377
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26246 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.73 s  ClockTime = 1 s
+
+Time = 0.7
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00446115, Final residual = 7.43934e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00446116, Final residual = 6.0637e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-2.45132e-18 3.92212e-18 -6.07541e-18) OK.
+    Max cell openness = 1.94115e-16 OK.
+    Max aspect ratio = 14.1618 OK.
+    Minimum face area = 0.0132039. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132039. Max volume = 0.0539844.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.8199 average: 28.2226
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26244 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.74 s  ClockTime = 1 s
+
+Time = 0.71
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00431088, Final residual = 3.06621e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00431094, Final residual = 3.6451e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-6.37232e-18 1.17643e-17 -1.61591e-17) OK.
+    Max cell openness = 2.03248e-16 OK.
+    Max aspect ratio = 14.1973 OK.
+    Minimum face area = 0.0132025. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132025. Max volume = 0.0539639.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.8667 average: 28.3038
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26277 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.75 s  ClockTime = 1 s
+
+Time = 0.72
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00416297, Final residual = 4.95818e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00416299, Final residual = 2.8839e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-9.06673e-18 -1.17622e-17 -8.86143e-17) OK.
+    Max cell openness = 2.00163e-16 OK.
+    Max aspect ratio = 14.2356 OK.
+    Minimum face area = 0.0132032. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132032. Max volume = 0.0540028.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.9146 average: 28.3833
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26269 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.76 s  ClockTime = 1 s
+
+Time = 0.73
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00401726, Final residual = 6.4978e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00401723, Final residual = 7.26478e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-4.4101e-18 5.88013e-18 3.43307e-17) OK.
+    Max cell openness = 2.06821e-16 OK.
+    Max aspect ratio = 14.2721 OK.
+    Minimum face area = 0.0132021. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132021. Max volume = 0.053977.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 46.9597 average: 28.4603
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26316 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.76 s  ClockTime = 1 s
+
+Time = 0.74
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00387361, Final residual = 6.58609e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00387359, Final residual = 7.21099e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-6.12412e-18 -1.07785e-17 -4.32636e-18) OK.
+    Max cell openness = 2.13124e-16 OK.
+    Max aspect ratio = 14.3083 OK.
+    Minimum face area = 0.0132016. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132016. Max volume = 0.0540148.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.005 average: 28.5362
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.263 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.77 s  ClockTime = 1 s
+
+Time = 0.75
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00373197, Final residual = 8.68367e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00373193, Final residual = 5.50855e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-6.61299e-18 1.9594e-18 -2.73805e-17) OK.
+    Max cell openness = 2.06025e-16 OK.
+    Max aspect ratio = 14.3427 OK.
+    Minimum face area = 0.0132009. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132009. Max volume = 0.0539911.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.0448 average: 28.6094
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26346 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.78 s  ClockTime = 1 s
+
+Time = 0.76
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0035922, Final residual = 5.81124e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00359218, Final residual = 6.97323e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.44887e-19 1.95909e-18 6.80924e-17) OK.
+    Max cell openness = 2.20742e-16 OK.
+    Max aspect ratio = 14.3768 OK.
+    Minimum face area = 0.0132004. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132004. Max volume = 0.0540285.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.086 average: 28.6811
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26331 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.79 s  ClockTime = 1 s
+
+Time = 0.77
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00345424, Final residual = 4.76531e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00345421, Final residual = 4.26461e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-2.44849e-18 1.17528e-17 7.94696e-17) OK.
+    Max cell openness = 1.75271e-16 OK.
+    Max aspect ratio = 14.409 OK.
+    Minimum face area = 0.0132001. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132001. Max volume = 0.0539994.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.1216 average: 28.7497
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26375 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.8 s  ClockTime = 1 s
+
+Time = 0.78
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00331798, Final residual = 6.11987e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00331796, Final residual = 7.11482e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.12614e-17 -7.83401e-18 8.49658e-17) OK.
+    Max cell openness = 1.80275e-16 OK.
+    Max aspect ratio = 14.441 OK.
+    Minimum face area = 0.0131996. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131996. Max volume = 0.0540348.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.1617 average: 28.8169
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26361 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.8 s  ClockTime = 1 s
+
+Time = 0.79
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00318334, Final residual = 4.15617e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00318332, Final residual = 5.40927e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.95822e-18 0 3.27875e-17) OK.
+    Max cell openness = 2.08389e-16 OK.
+    Max aspect ratio = 14.4712 OK.
+    Minimum face area = 0.0131988. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131988. Max volume = 0.0540057.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.196 average: 28.8817
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26403 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.81 s  ClockTime = 1 s
+
+Time = 0.8
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00305024, Final residual = 3.51568e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00305022, Final residual = 5.36728e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (8.566e-18 5.87383e-18 1.46583e-18) OK.
+    Max cell openness = 2.15984e-16 OK.
+    Max aspect ratio = 14.5011 OK.
+    Minimum face area = 0.0131991. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131991. Max volume = 0.0540285.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.2276 average: 28.944
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.2639 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.82 s  ClockTime = 1 s
+
+Time = 0.81
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0029186, Final residual = 3.39698e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00291856, Final residual = 3.9278e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (7.09659e-18 -8.80956e-18 7.40917e-18) OK.
+    Max cell openness = 2.27401e-16 OK.
+    Max aspect ratio = 14.529 OK.
+    Minimum face area = 0.0131981. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131981. Max volume = 0.0540122.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.2617 average: 29.0041
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26428 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.82 s  ClockTime = 1 s
+
+Time = 0.82
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00278811, Final residual = 1.69737e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00278809, Final residual = 2.93238e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.93613e-18 -5.87227e-18 5.01403e-17) OK.
+    Max cell openness = 2.18682e-16 OK.
+    Max aspect ratio = 14.5561 OK.
+    Minimum face area = 0.0131992. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131992. Max volume = 0.0540324.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.2968 average: 29.0617
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26417 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.83 s  ClockTime = 1 s
+
+Time = 0.83
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00265878, Final residual = 2.81351e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00265875, Final residual = 4.38931e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-7.33942e-18 -7.82871e-18 2.98133e-17) OK.
+    Max cell openness = 2.0763e-16 OK.
+    Max aspect ratio = 14.582 OK.
+    Minimum face area = 0.0131981. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131981. Max volume = 0.0540188.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.3296 average: 29.1167
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26452 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.84 s  ClockTime = 1 s
+
+Time = 0.84
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.0025307, Final residual = 2.46608e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00253069, Final residual = 3.24581e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.22309e-18 3.91388e-18 2.09623e-17) OK.
+    Max cell openness = 1.98086e-16 OK.
+    Max aspect ratio = 14.6069 OK.
+    Minimum face area = 0.0131996. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131996. Max volume = 0.0540361.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.3655 average: 29.1694
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26441 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.84 s  ClockTime = 1 s
+
+Time = 0.85
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00240386, Final residual = 2.99216e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00240383, Final residual = 6.0357e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (3.42425e-18 1.95671e-18 1.93875e-17) OK.
+    Max cell openness = 2.05643e-16 OK.
+    Max aspect ratio = 14.6308 OK.
+    Minimum face area = 0.0131984. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131984. Max volume = 0.054023.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.3955 average: 29.2197
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26474 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.85 s  ClockTime = 1 s
+
+Time = 0.86
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00227815, Final residual = 1.45099e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00227814, Final residual = 3.99444e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (3.42387e-18 -9.78249e-19 2.10639e-17) OK.
+    Max cell openness = 2.09848e-16 OK.
+    Max aspect ratio = 14.6533 OK.
+    Minimum face area = 0.0131999. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131999. Max volume = 0.0540393.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.4274 average: 29.2675
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26465 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.86 s  ClockTime = 1 s
+
+Time = 0.87
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00215352, Final residual = 3.6036e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0021535, Final residual = 2.96752e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (5.62434e-18 -1.95629e-18 -4.81001e-18) OK.
+    Max cell openness = 1.73453e-16 OK.
+    Max aspect ratio = 14.6745 OK.
+    Minimum face area = 0.0131986. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131986. Max volume = 0.0540339.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.457 average: 29.3124
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.26825 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.87 s  ClockTime = 1 s
+
+Time = 0.88
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00202989, Final residual = 5.28785e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00202988, Final residual = 4.05117e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (6.1128e-18 3.91219e-18 -6.65913e-18) OK.
+    Max cell openness = 2.11634e-16 OK.
+    Max aspect ratio = 14.695 OK.
+    Minimum face area = 0.0131999. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131999. Max volume = 0.0540389.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.4856 average: 29.3557
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.27347 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.88 s  ClockTime = 1 s
+
+Time = 0.89
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00190722, Final residual = 8.14334e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.0019072, Final residual = 8.41992e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (2.93387e-18 1.36914e-17 1.99464e-17) OK.
+    Max cell openness = 2.02984e-16 OK.
+    Max aspect ratio = 14.7139 OK.
+    Minimum face area = 0.0131992. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0131992. Max volume = 0.0540348.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.5087 average: 29.3957
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.27834 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.89 s  ClockTime = 1 s
+
+Time = 0.9
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00178542, Final residual = 8.79429e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00178541, Final residual = 5.96056e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-6.11167e-18 -5.86721e-18 9.26659e-17) OK.
+    Max cell openness = 1.79162e-16 OK.
+    Max aspect ratio = 14.732 OK.
+    Minimum face area = 0.0132006. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132006. Max volume = 0.0540376.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.5319 average: 29.4341
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.28298 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.89 s  ClockTime = 1 s
+
+Time = 0.91
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00166445, Final residual = 1.01655e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00166443, Final residual = 5.3372e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-3.91114e-18 -6.35561e-18 3.87486e-17) OK.
+    Max cell openness = 1.86759e-16 OK.
+    Max aspect ratio = 14.7485 OK.
+    Minimum face area = 0.0132003. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132003. Max volume = 0.0540351.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.5541 average: 29.4692
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.28728 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.9 s  ClockTime = 1 s
+
+Time = 0.92
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00154424, Final residual = 5.5283e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00154422, Final residual = 1.81095e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-7.82168e-18 3.91084e-18 2.49082e-17) OK.
+    Max cell openness = 2.11738e-16 OK.
+    Max aspect ratio = 14.764 OK.
+    Minimum face area = 0.0132024. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132024. Max volume = 0.0540331.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.5734 average: 29.5024
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.29131 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.91 s  ClockTime = 1 s
+
+Time = 0.93
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00142473, Final residual = 9.4252e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00142471, Final residual = 8.63201e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-1.95528e-18 -3.91056e-18 2.92843e-17) OK.
+    Max cell openness = 2.10036e-16 OK.
+    Max aspect ratio = 14.7782 OK.
+    Minimum face area = 0.0132022. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132022. Max volume = 0.0540333.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.5885 average: 29.5327
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.29505 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.91 s  ClockTime = 1 s
+
+Time = 0.94
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00130586, Final residual = 5.24055e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00130585, Final residual = 2.25047e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (7.3318e-19 1.17309e-17 4.7394e-17) OK.
+    Max cell openness = 1.92889e-16 OK.
+    Max aspect ratio = 14.7914 OK.
+    Minimum face area = 0.0132039. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132039. Max volume = 0.0540311.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.6056 average: 29.5609
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.2985 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.92 s  ClockTime = 1 s
+
+Time = 0.95
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00118759, Final residual = 8.98833e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00118757, Final residual = 5.4627e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-2.44379e-19 0 -1.55672e-18) OK.
+    Max cell openness = 1.85184e-16 OK.
+    Max aspect ratio = 14.8034 OK.
+    Minimum face area = 0.0132039. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132039. Max volume = 0.0540307.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.6197 average: 29.5863
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.30165 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.93 s  ClockTime = 1 s
+
+Time = 0.96
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.00106984, Final residual = 1.09625e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00106983, Final residual = 2.12038e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (5.86476e-18 -3.90984e-18 5.01617e-17) OK.
+    Max cell openness = 1.97106e-16 OK.
+    Max aspect ratio = 14.814 OK.
+    Minimum face area = 0.0132054. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132054. Max volume = 0.0540282.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.6331 average: 29.6094
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.3045 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.93 s  ClockTime = 1 s
+
+Time = 0.97
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.000952576, Final residual = 9.2783e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.000952566, Final residual = 5.61298e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (1.22177e-18 3.90965e-18 -3.62585e-17) OK.
+    Max cell openness = 1.85152e-16 OK.
+    Max aspect ratio = 14.8234 OK.
+    Minimum face area = 0.0132057. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132057. Max volume = 0.0540272.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.6441 average: 29.6298
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.30705 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.94 s  ClockTime = 1 s
+
+Time = 0.98
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.000835733, Final residual = 1.36569e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.000835728, Final residual = 8.68781e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-6.84159e-18 7.81896e-18 -4.77976e-17) OK.
+    Max cell openness = 1.7954e-16 OK.
+    Max aspect ratio = 14.8317 OK.
+    Minimum face area = 0.0132069. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132069. Max volume = 0.0540244.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.6538 average: 29.6478
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.30931 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.95 s  ClockTime = 1 s
+
+Time = 0.99
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.000719266, Final residual = 2.81522e-18, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.00071926, Final residual = 6.75951e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-9.77333e-19 0 9.16856e-17) OK.
+    Max cell openness = 1.90472e-16 OK.
+    Max aspect ratio = 14.8386 OK.
+    Minimum face area = 0.0132074. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132074. Max volume = 0.0540226.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.6616 average: 29.6631
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.31127 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.96 s  ClockTime = 1 s
+
+Time = 1
+PIMPLE: iteration 1
+GAMG:  Solving for cellDisplacementx, Initial residual = 0.000603115, Final residual = 1.12657e-17, No Iterations 1
+GAMG:  Solving for cellDisplacementy, Initial residual = 0.000603112, Final residual = 8.72169e-18, No Iterations 1
+    Point usage OK.
+    Upper triangular ordering OK.
+    Topological cell zip-up check OK.
+    Face vertices OK.
+    Face-face connectivity OK.
+    Mesh topology OK.
+    Boundary openness (-6.10814e-18 0 4.57514e-17) OK.
+    Max cell openness = 2.01663e-16 OK.
+    Max aspect ratio = 14.8444 OK.
+    Minimum face area = 0.0132088. Maximum face area = 0.375.  Face area magnitudes OK.
+    Min volume = 0.0132088. Max volume = 0.0540193.  Total volume = 32.8635.  Cell volumes OK.
+    Mesh non-orthogonality Max: 47.668 average: 29.6761
+    Non-orthogonality check OK.
+    Face pyramids OK.
+    Max skewness = 1.31292 OK.
+    Mesh geometry OK.
+Mesh OK.
+ExecutionTime = 0.97 s  ClockTime = 1 s
+
+End
+
+Finalising parallel run
+(clean_bo_env) openfoam2412:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/
+cfdm$ 
+

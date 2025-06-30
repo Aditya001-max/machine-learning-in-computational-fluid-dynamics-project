@@ -1,0 +1,4 @@
+11:09:48 cfdm-MS-7A15 __main__.cp-DA995ET7414W[654084:MainThread] INFO Indirect proxy 654084 child process 654090 started
+11:09:48 cfdm-MS-7A15 __main__.cp-DA995ET7414W[654084:MainThread] INFO Waiting for child process 654090 to complete
+11:09:48 cfdm-MS-7A15 __main__.cp-DA995ET7414W[654084:MainThread] INFO Indirect proxy 654084 child process 654090 complete. return code: 1
+11:09:48 cfdm-MS-7A15 __main__.cp-DA995ET7414W[654084:MainThread] INFO Performing cleanup

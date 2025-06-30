@@ -1,0 +1,5 @@
+10:35:25 cfdm-MS-7A15 __main__.orchestrator_0-DA6OJG24J5E4[597538:MainThread] INFO Indirect proxy 597538 child process 597549 started
+10:35:25 cfdm-MS-7A15 __main__.orchestrator_0-DA6OJG24J5E4[597538:MainThread] INFO Waiting for child process 597549 to complete
+10:47:18 cfdm-MS-7A15 __main__.orchestrator_0-DA6OJG24J5E4[597538:MainThread] INFO handling signal 2
+10:47:18 cfdm-MS-7A15 __main__.orchestrator_0-DA6OJG24J5E4[597538:MainThread] INFO Performing cleanup
+10:47:18 cfdm-MS-7A15 __main__.orchestrator_0-DA6OJG24J5E4[597538:MainThread] INFO Indirect proxy 597538 child process None complete. return code: 0

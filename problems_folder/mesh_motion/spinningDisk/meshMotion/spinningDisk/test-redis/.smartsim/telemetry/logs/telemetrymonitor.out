@@ -1,0 +1,32 @@
+2025-06-23 12:13:44,945 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Executing telemetry monitor
+2025-06-23 12:13:44,945 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Polling frequency: 5.0s
+2025-06-23 12:13:44,945 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Experiment directory: /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis
+2025-06-23 12:13:44,945 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Telemetry output: /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry
+2025-06-23 12:13:49,952 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 5.56% complete
+2025-06-23 12:13:54,648 cfdm-MS-7A15 TelemetryMonitor[1094628:Thread-1] INFO Created file: /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry/manifest.json
+2025-06-23 12:13:54,648 cfdm-MS-7A15 TelemetryMonitor[1094628:Thread-1] INFO Modified directory: /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry
+2025-06-23 12:13:54,648 cfdm-MS-7A15 TelemetryMonitor[1094628:Thread-1] INFO Opened file: /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry/manifest.json
+2025-06-23 12:13:54,661 cfdm-MS-7A15 TelemetryMonitor[1094628:Thread-1] INFO Modified file: /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry/manifest.json
+2025-06-23 12:13:54,661 cfdm-MS-7A15 TelemetryMonitor[1094628:Thread-1] INFO Closed file: /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry/manifest.json
+2025-06-23 12:13:54,661 cfdm-MS-7A15 TelemetryMonitor[1094628:Thread-1] INFO Modified directory: /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry
+2025-06-23 12:13:54,662 cfdm-MS-7A15 TelemetryMonitor[1094628:Thread-1] INFO Opened file: /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry/manifest.json
+2025-06-23 12:14:34,989 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 5.56% complete
+2025-06-23 12:14:39,993 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 11.12% complete
+2025-06-23 12:14:44,997 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 16.68% complete
+2025-06-23 12:14:50,001 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 22.24% complete
+2025-06-23 12:14:55,005 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 27.80% complete
+2025-06-23 12:15:00,009 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 33.36% complete
+2025-06-23 12:15:05,012 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 38.92% complete
+2025-06-23 12:15:10,016 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 44.48% complete
+2025-06-23 12:15:15,020 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 50.04% complete
+2025-06-23 12:15:20,024 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 55.60% complete
+2025-06-23 12:15:25,029 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 61.16% complete
+2025-06-23 12:15:30,033 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 66.72% complete
+2025-06-23 12:15:35,037 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 72.28% complete
+2025-06-23 12:15:40,041 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 77.84% complete
+2025-06-23 12:15:45,044 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 83.40% complete
+2025-06-23 12:15:50,048 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 88.96% complete
+2025-06-23 12:15:55,052 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown 94.52% complete
+2025-06-23 12:16:00,056 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Cooldown complete. Beginning shutdown
+2025-06-23 12:16:00,073 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Exiting telemetry monitor event loop
+2025-06-23 12:16:00,073 cfdm-MS-7A15 TelemetryMonitor[1094628:MainThread] INFO Telemetry monitor shutdown complete

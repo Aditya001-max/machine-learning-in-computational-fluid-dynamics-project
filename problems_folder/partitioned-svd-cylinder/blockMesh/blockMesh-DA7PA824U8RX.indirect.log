@@ -1,0 +1,4 @@
+15:23:03 cfdm-MS-7A15 __main__.blockMesh-DA7PA824U8RX[624743:MainThread] INFO Indirect proxy 624743 child process 624749 started
+15:23:03 cfdm-MS-7A15 __main__.blockMesh-DA7PA824U8RX[624743:MainThread] INFO Waiting for child process 624749 to complete
+15:23:03 cfdm-MS-7A15 __main__.blockMesh-DA7PA824U8RX[624743:MainThread] INFO Indirect proxy 624743 child process 624749 complete. return code: 127
+15:23:03 cfdm-MS-7A15 __main__.blockMesh-DA7PA824U8RX[624743:MainThread] INFO Performing cleanup

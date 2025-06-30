@@ -1,0 +1,50 @@
+{
+  "schema info": {
+    "schema_name": "entity manifest",
+    "version": "0.0.4"
+  },
+  "experiment": {
+    "name": "test-redis",
+    "path": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis",
+    "launcher": "Local",
+    "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry/logs/smartsim.out",
+    "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry/logs/smartsim.err"
+  },
+  "runs": [
+    {
+      "run_id": "a37fb21",
+      "timestamp": 1750661034631514381,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry/test-redis/a37fb21/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry/test-redis/a37fb21/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/spinningDisk/test-redis/.smartsim/telemetry/test-redis/a37fb21/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "1094630",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    }
+  ]
+}

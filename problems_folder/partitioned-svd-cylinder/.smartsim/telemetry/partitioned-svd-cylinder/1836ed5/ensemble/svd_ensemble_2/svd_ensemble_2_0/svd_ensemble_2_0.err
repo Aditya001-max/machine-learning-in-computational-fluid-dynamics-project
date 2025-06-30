@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_2/svd_ensemble_2_0/partial_svd.py", line 8, in <module>
+    mpi_rank = mpi_rank
+NameError: name 'mpi_rank' is not defined

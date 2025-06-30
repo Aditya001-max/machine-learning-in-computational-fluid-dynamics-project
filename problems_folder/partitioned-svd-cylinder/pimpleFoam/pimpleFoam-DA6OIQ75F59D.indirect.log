@@ -1,0 +1,4 @@
+10:34:28 cfdm-MS-7A15 __main__.pimpleFoam-DA6OIQ75F59D[597445:MainThread] INFO Indirect proxy 597445 child process 597451 started
+10:34:28 cfdm-MS-7A15 __main__.pimpleFoam-DA6OIQ75F59D[597445:MainThread] INFO Waiting for child process 597451 to complete
+10:34:30 cfdm-MS-7A15 __main__.pimpleFoam-DA6OIQ75F59D[597445:MainThread] INFO Indirect proxy 597445 child process 597451 complete. return code: 127
+10:34:30 cfdm-MS-7A15 __main__.pimpleFoam-DA6OIQ75F59D[597445:MainThread] INFO Performing cleanup

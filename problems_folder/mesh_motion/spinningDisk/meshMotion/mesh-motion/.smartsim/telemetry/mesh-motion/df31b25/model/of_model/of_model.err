@@ -1,0 +1,14 @@
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh: symbol lookup error: /usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh: undefined symbol: _ZTIN4Foam13UIPstreamBaseE
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh: symbol lookup error: /usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh: undefined symbol: _ZTIN4Foam13UIPstreamBaseE
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh: symbol lookup error: /usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/moveDynamicMesh: undefined symbol: _ZTIN4Foam13UIPstreamBaseE
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[38519,1],0]
+  Exit code:    127
+--------------------------------------------------------------------------

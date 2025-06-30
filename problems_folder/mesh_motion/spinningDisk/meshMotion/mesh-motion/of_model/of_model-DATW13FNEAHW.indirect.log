@@ -1,0 +1,4 @@
+17:18:55 cfdm-MS-7A15 __main__.of_model-DATW13FNEAHW[1102346:MainThread] INFO Indirect proxy 1102346 child process 1102358 started
+17:18:55 cfdm-MS-7A15 __main__.of_model-DATW13FNEAHW[1102346:MainThread] INFO Waiting for child process 1102358 to complete
+17:18:55 cfdm-MS-7A15 __main__.of_model-DATW13FNEAHW[1102346:MainThread] INFO Indirect proxy 1102346 child process 1102358 complete. return code: 127
+17:18:55 cfdm-MS-7A15 __main__.of_model-DATW13FNEAHW[1102346:MainThread] INFO Performing cleanup

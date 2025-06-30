@@ -1,0 +1,89 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      dynamicMeshDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dynamicFvMesh   dynamicMotionSolverFvMesh;
+
+motionSolverLibs (sixDoFRigidBodyMotion);
+
+motionSolver    sixDoFRigidBodyMotion;
+
+writePosition   yes;
+updateControl   timeStep;
+updateInterval  1;
+
+patches         (cylinder);          
+innerDistance   0.3;
+outerDistance   1.0;
+
+sixDoFRigidBodyMotionCoeffs
+{
+    patches         (cylinder);          
+    innerDistance   0.3;
+    outerDistance   1.0;
+    centreOfMass    (0 0 0.125);
+    momentOfInertia (1 1 1);
+    mass            1;
+    orientation     (1 0 0 0 1 0 0 0 1);
+    velocity        (0 0 0);
+    acceleration    (0 0 0);
+
+    solver
+    {
+        type CrankNicolson;
+    }
+
+    restraints
+    {
+        verticalSpring
+        {
+             sixDoFRigidBodyMotionRestraint linearSpring;
+    anchor            (0.25 0.007 0.125);
+    refAttachmentPt   (0.25 0.007 0.125);
+    stiffness         4000;
+    damping           2;
+    restLength        0;
+        }
+
+        axialSpring
+        {
+            sixDoFRigidBodyMotionRestraint linearAxialAngularSpring;
+    axis                 (0 0 1);
+    stiffness            700;
+    damping              0.5;
+    referenceOrientation $orientation;
+        }
+    }
+}
+
+constraints
+{
+    yLine
+    {
+        type              line;
+        centreOfRotation  (0.25 0.007 0.125);
+        direction         (0 1 0);
+    }
+
+    zAxis
+    {
+        type              axis;
+        axis              (0 0 1);
+    }
+}
+
+// ************************************************************************* //
+

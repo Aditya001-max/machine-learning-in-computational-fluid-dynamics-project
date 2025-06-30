@@ -1,0 +1,9 @@
+{
+  "timestamp": 1750676204706,
+  "job_id": 1100928,
+  "step_id": "",
+  "type": "model",
+  "action": "stop",
+  "detail": "Process 1100934 finished with return code: 127",
+  "return_code": 127
+}

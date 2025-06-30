@@ -1,0 +1,40 @@
+----------- Running Command ----------
+COMMAND: /home/cfdm/anaconda3/envs/smartsim_conda/lib/python3.10/site-packages/smartsim/_core/bin/redis-server /home/cfdm/anaconda3/envs/smartsim_conda/lib/python3.10/site-packages/smartsim/_core/config/redis.conf --loadmodule /home/cfdm/anaconda3/envs/smartsim_conda/lib/python3.10/site-packages/smartsim/_core/lib/redisai.so --port 8000 --bind 127.0.0.1 --bind-source-addr 127.0.0.1
+IPADDRESS: 127.0.0.1
+NETWORK: lo
+SMARTSIM_ORC_SHARD_INFO: {"name": "orchestrator_0", "hostname": "127.0.0.1", "port": 8000, "cluster": false}
+--------------------------------------
+
+--------------- Output ---------------
+
+
+597294:C 27 May 2025 10:32:52.856 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+597294:C 27 May 2025 10:32:52.856 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+597294:C 27 May 2025 10:32:52.856 * Redis version=7.2.4, bits=64, commit=d2c8a4b9, modified=0, pid=597294, just started
+597294:C 27 May 2025 10:32:52.856 * Configuration loaded
+597294:M 27 May 2025 10:32:52.857 * Increased maximum number of open files to 50032 (it was originally set to 4096).
+597294:M 27 May 2025 10:32:52.857 * monotonic clock: POSIX clock_gettime
+597294:M 27 May 2025 10:32:52.858 # Failed to write PID file: Permission denied
+                _._
+           _.-``__ ''-._
+      _.-``    `.  `_.  ''-._           Redis 7.2.4 (d2c8a4b9/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 8000
+ |    `-._   `._    /     _.-'    |     PID: 597294
+  `-._    `-._  `-./  _.-'    _.-'
+ |`-._`-._    `-.__.-'    _.-'_.-'|
+ |    `-._`-._        _.-'_.-'    |           https://redis.io
+  `-._    `-._`-.__.-'_.-'    _.-'
+ |`-._`-._    `-.__.-'    _.-'_.-'|
+ |    `-._`-._        _.-'_.-'    |
+  `-._    `-._`-.__.-'_.-'    _.-'
+      `-._    `-.__.-'    _.-'
+          `-._        _.-'
+              `-.__.-'
+
+597294:M 27 May 2025 10:32:52.858 * <ai> Redis version found by RedisAI: 7.2.4 - oss
+597294:M 27 May 2025 10:32:52.858 * <ai> RedisAI version 10207, git_sha=unknown
+597294:M 27 May 2025 10:32:52.858 * Module 'ai' loaded from /home/cfdm/anaconda3/envs/smartsim_conda/lib/python3.10/site-packages/smartsim/_core/lib/redisai.so
+597294:M 27 May 2025 10:32:52.858 # Warning: Could not create server TCP listening socket 127.0.0.1:8000: bind: Address already in use
+597294:M 27 May 2025 10:32:52.858 # Failed listening on port 8000 (tcp), aborting.

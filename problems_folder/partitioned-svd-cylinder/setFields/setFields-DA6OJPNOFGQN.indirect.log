@@ -1,0 +1,4 @@
+10:35:46 cfdm-MS-7A15 __main__.setFields-DA6OJPNOFGQN[597597:MainThread] INFO Indirect proxy 597597 child process 597604 started
+10:35:46 cfdm-MS-7A15 __main__.setFields-DA6OJPNOFGQN[597597:MainThread] INFO Waiting for child process 597604 to complete
+10:35:46 cfdm-MS-7A15 __main__.setFields-DA6OJPNOFGQN[597597:MainThread] INFO Indirect proxy 597597 child process 597604 complete. return code: 127
+10:35:46 cfdm-MS-7A15 __main__.setFields-DA6OJPNOFGQN[597597:MainThread] INFO Performing cleanup

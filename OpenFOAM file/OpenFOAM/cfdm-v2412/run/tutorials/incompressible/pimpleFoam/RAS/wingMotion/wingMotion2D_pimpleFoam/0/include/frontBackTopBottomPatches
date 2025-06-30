@@ -1,0 +1,26 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+front_back
+{
+    type            empty;
+}
+
+
+top
+{
+    type            slip;  // or wallFunction
+    value           $internalField;
+}
+
+bottom
+{
+    type            kqRWallFunction;
+    value           $internalField;
+}
+
+// ************************************************************************* //

@@ -1,0 +1,3334 @@
+{
+  "schema info": {
+    "schema_name": "entity manifest",
+    "version": "0.0.4"
+  },
+  "experiment": {
+    "name": "partitioned-svd-cylinder",
+    "path": "/home/cfdm/partitioned-svd-cylinder",
+    "launcher": "Local",
+    "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/logs/smartsim.out",
+    "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/logs/smartsim.err"
+  },
+  "runs": [
+    {
+      "run_id": "001137e",
+      "timestamp": 1748241185332248329,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/001137e/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/001137e/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/001137e/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "575722",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "3fe9910",
+      "timestamp": 1748321536998737893,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3fe9910/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3fe9910/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3fe9910/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "596865",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "d525d44",
+      "timestamp": 1748321605752066582,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/d525d44/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/d525d44/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/d525d44/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "597001",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "be47f83",
+      "timestamp": 1748322223042625619,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/be47f83/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/be47f83/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/be47f83/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "597328",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "da17a35",
+      "timestamp": 1748322242429610271,
+      "model": [
+        {
+          "name": "blockMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/blockMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/blockMesh"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/da17a35/model/blockMesh",
+            "step_id": null,
+            "task_id": "597384",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/da17a35/model/blockMesh/blockMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/da17a35/model/blockMesh/blockMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "17056b0",
+      "timestamp": 1748322247637377224,
+      "model": [
+        {
+          "name": "cp",
+          "path": "/home/cfdm/partitioned-svd-cylinder/cp",
+          "exe_args": [
+            "-r",
+            "cylinder2D/0.org",
+            "cylinder2D/0"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/bin/cp"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/17056b0/model/cp",
+            "step_id": null,
+            "task_id": "597395",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/17056b0/model/cp/cp.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/17056b0/model/cp/cp.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "5dd9172",
+      "timestamp": 1748322252852080309,
+      "model": [
+        {
+          "name": "setFields",
+          "path": "/home/cfdm/partitioned-svd-cylinder/setFields",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/setFields"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5dd9172/model/setFields",
+            "step_id": null,
+            "task_id": "597408",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5dd9172/model/setFields/setFields.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5dd9172/model/setFields/setFields.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "5336a57",
+      "timestamp": 1748322258093695619,
+      "model": [
+        {
+          "name": "decomposePar",
+          "path": "/home/cfdm/partitioned-svd-cylinder/decomposePar",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/decomposePar"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5336a57/model/decomposePar",
+            "step_id": null,
+            "task_id": "597418",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5336a57/model/decomposePar/decomposePar.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5336a57/model/decomposePar/decomposePar.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "d215a4d",
+      "timestamp": 1748322263302411664,
+      "model": [
+        {
+          "name": "renumberMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/renumberMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel",
+            "-overwrite"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/renumberMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/d215a4d/model/renumberMesh",
+            "step_id": null,
+            "task_id": "597428",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/d215a4d/model/renumberMesh/renumberMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/d215a4d/model/renumberMesh/renumberMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "5a552ea",
+      "timestamp": 1748322268518377307,
+      "model": [
+        {
+          "name": "pimpleFoam",
+          "path": "/home/cfdm/partitioned-svd-cylinder/pimpleFoam",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/pimpleFoam"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5a552ea/model/pimpleFoam",
+            "step_id": null,
+            "task_id": "597445",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5a552ea/model/pimpleFoam/pimpleFoam.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5a552ea/model/pimpleFoam/pimpleFoam.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "9130161",
+      "timestamp": 1748322334823977449,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/9130161/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/9130161/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/9130161/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "597538",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "fa9333b",
+      "timestamp": 1748322335281676898,
+      "model": [
+        {
+          "name": "blockMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/blockMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/blockMesh"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/fa9333b/model/blockMesh",
+            "step_id": null,
+            "task_id": "597574",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/fa9333b/model/blockMesh/blockMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/fa9333b/model/blockMesh/blockMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "2034960",
+      "timestamp": 1748322340491361339,
+      "model": [
+        {
+          "name": "cp",
+          "path": "/home/cfdm/partitioned-svd-cylinder/cp",
+          "exe_args": [
+            "-r",
+            "cylinder2D/0.org",
+            "cylinder2D/0"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/bin/cp"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/2034960/model/cp",
+            "step_id": null,
+            "task_id": "597587",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/2034960/model/cp/cp.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/2034960/model/cp/cp.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "2d33b78",
+      "timestamp": 1748322345702959391,
+      "model": [
+        {
+          "name": "setFields",
+          "path": "/home/cfdm/partitioned-svd-cylinder/setFields",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/setFields"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/2d33b78/model/setFields",
+            "step_id": null,
+            "task_id": "597597",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/2d33b78/model/setFields/setFields.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/2d33b78/model/setFields/setFields.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "334fc40",
+      "timestamp": 1748322350915659613,
+      "model": [
+        {
+          "name": "decomposePar",
+          "path": "/home/cfdm/partitioned-svd-cylinder/decomposePar",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/decomposePar"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/334fc40/model/decomposePar",
+            "step_id": null,
+            "task_id": "597607",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/334fc40/model/decomposePar/decomposePar.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/334fc40/model/decomposePar/decomposePar.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "6a3fb63",
+      "timestamp": 1748322356129818967,
+      "model": [
+        {
+          "name": "renumberMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/renumberMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel",
+            "-overwrite"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/renumberMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/6a3fb63/model/renumberMesh",
+            "step_id": null,
+            "task_id": "597617",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/6a3fb63/model/renumberMesh/renumberMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/6a3fb63/model/renumberMesh/renumberMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "c16a75a",
+      "timestamp": 1748322361336968798,
+      "model": [
+        {
+          "name": "pimpleFoam",
+          "path": "/home/cfdm/partitioned-svd-cylinder/pimpleFoam",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/pimpleFoam"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/c16a75a/model/pimpleFoam",
+            "step_id": null,
+            "task_id": "597634",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/c16a75a/model/pimpleFoam/pimpleFoam.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/c16a75a/model/pimpleFoam/pimpleFoam.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "ea7e093",
+      "timestamp": 1748322958613924778,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble",
+          "params": {
+            "SVD_RANK": 2
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble/svd_ensemble_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "2"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ea7e093/ensemble/svd_ensemble/svd_ensemble_0",
+                "step_id": null,
+                "task_id": "598002",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ea7e093/ensemble/svd_ensemble/svd_ensemble_0/svd_ensemble_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ea7e093/ensemble/svd_ensemble/svd_ensemble_0/svd_ensemble_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "8475548",
+      "timestamp": 1748323589426340137,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_2",
+          "params": {
+            "SVD_RANK": 2
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_2_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_2/svd_ensemble_2_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "2"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/8475548/ensemble/svd_ensemble_2/svd_ensemble_2_0",
+                "step_id": null,
+                "task_id": "598437",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/8475548/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/8475548/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "83739b6",
+      "timestamp": 1748323594646860818,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_4",
+          "params": {
+            "SVD_RANK": 4
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_4_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_4/svd_ensemble_4_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "4"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/83739b6/ensemble/svd_ensemble_4/svd_ensemble_4_0",
+                "step_id": null,
+                "task_id": "598455",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/83739b6/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/83739b6/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "5709809",
+      "timestamp": 1748323599861326498,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_8",
+          "params": {
+            "SVD_RANK": 8
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_8_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_8/svd_ensemble_8_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "8"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5709809/ensemble/svd_ensemble_8/svd_ensemble_8_0",
+                "step_id": null,
+                "task_id": "598471",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5709809/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5709809/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "2f0c7b2",
+      "timestamp": 1748323605081350607,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_16",
+          "params": {
+            "SVD_RANK": 16
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_16_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_16/svd_ensemble_16_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "16"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/2f0c7b2/ensemble/svd_ensemble_16/svd_ensemble_16_0",
+                "step_id": null,
+                "task_id": "598499",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/2f0c7b2/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/2f0c7b2/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "62003ee",
+      "timestamp": 1748323846963611360,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/62003ee/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/62003ee/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/62003ee/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "598721",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "3c2eb92",
+      "timestamp": 1748323847397364688,
+      "model": [
+        {
+          "name": "blockMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/blockMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/blockMesh"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3c2eb92/model/blockMesh",
+            "step_id": null,
+            "task_id": "598770",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3c2eb92/model/blockMesh/blockMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3c2eb92/model/blockMesh/blockMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "50b20bf",
+      "timestamp": 1748323852611667004,
+      "model": [
+        {
+          "name": "cp",
+          "path": "/home/cfdm/partitioned-svd-cylinder/cp",
+          "exe_args": [
+            "-r",
+            "cylinder2D/0.org",
+            "cylinder2D/0"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/bin/cp"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/50b20bf/model/cp",
+            "step_id": null,
+            "task_id": "598779",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/50b20bf/model/cp/cp.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/50b20bf/model/cp/cp.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "192fcb8",
+      "timestamp": 1748323857823862327,
+      "model": [
+        {
+          "name": "setFields",
+          "path": "/home/cfdm/partitioned-svd-cylinder/setFields",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/setFields"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/192fcb8/model/setFields",
+            "step_id": null,
+            "task_id": "598790",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/192fcb8/model/setFields/setFields.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/192fcb8/model/setFields/setFields.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "5a264d0",
+      "timestamp": 1748323863033574065,
+      "model": [
+        {
+          "name": "decomposePar",
+          "path": "/home/cfdm/partitioned-svd-cylinder/decomposePar",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/decomposePar"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5a264d0/model/decomposePar",
+            "step_id": null,
+            "task_id": "598800",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5a264d0/model/decomposePar/decomposePar.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5a264d0/model/decomposePar/decomposePar.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "0074d73",
+      "timestamp": 1748323868245573300,
+      "model": [
+        {
+          "name": "renumberMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/renumberMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel",
+            "-overwrite"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/renumberMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/0074d73/model/renumberMesh",
+            "step_id": null,
+            "task_id": "598810",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/0074d73/model/renumberMesh/renumberMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/0074d73/model/renumberMesh/renumberMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "a6564b1",
+      "timestamp": 1748323873478839722,
+      "model": [
+        {
+          "name": "pimpleFoam",
+          "path": "/home/cfdm/partitioned-svd-cylinder/pimpleFoam",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/pimpleFoam"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a6564b1/model/pimpleFoam",
+            "step_id": null,
+            "task_id": "598827",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a6564b1/model/pimpleFoam/pimpleFoam.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a6564b1/model/pimpleFoam/pimpleFoam.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "3d2f993",
+      "timestamp": 1748323879783535401,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_2",
+          "params": {
+            "SVD_RANK": 2
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_2_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_2/svd_ensemble_2_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "2"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3d2f993/ensemble/svd_ensemble_2/svd_ensemble_2_0",
+                "step_id": null,
+                "task_id": "598852",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3d2f993/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3d2f993/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "4652126",
+      "timestamp": 1748323885003161118,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_4",
+          "params": {
+            "SVD_RANK": 4
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_4_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_4/svd_ensemble_4_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "4"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/4652126/ensemble/svd_ensemble_4/svd_ensemble_4_0",
+                "step_id": null,
+                "task_id": "598866",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/4652126/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/4652126/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "b05ebd8",
+      "timestamp": 1748323890225602848,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_8",
+          "params": {
+            "SVD_RANK": 8
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_8_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_8/svd_ensemble_8_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "8"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b05ebd8/ensemble/svd_ensemble_8/svd_ensemble_8_0",
+                "step_id": null,
+                "task_id": "598878",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b05ebd8/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b05ebd8/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "b367b2a",
+      "timestamp": 1748323895441823879,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_16",
+          "params": {
+            "SVD_RANK": 16
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_16_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_16/svd_ensemble_16_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "16"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b367b2a/ensemble/svd_ensemble_16/svd_ensemble_16_0",
+                "step_id": null,
+                "task_id": "598892",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b367b2a/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b367b2a/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "1dbf95c",
+      "timestamp": 1748346748727144103,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1dbf95c/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1dbf95c/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1dbf95c/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "608668",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "e3c4608",
+      "timestamp": 1748346749182213512,
+      "model": [
+        {
+          "name": "blockMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/blockMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/blockMesh"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/e3c4608/model/blockMesh",
+            "step_id": null,
+            "task_id": "608704",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/e3c4608/model/blockMesh/blockMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/e3c4608/model/blockMesh/blockMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "c85d37b",
+      "timestamp": 1748346754398044868,
+      "model": [
+        {
+          "name": "cp",
+          "path": "/home/cfdm/partitioned-svd-cylinder/cp",
+          "exe_args": [
+            "-r",
+            "cylinder2D/0.org",
+            "cylinder2D/0"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/bin/cp"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/c85d37b/model/cp",
+            "step_id": null,
+            "task_id": "608714",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/c85d37b/model/cp/cp.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/c85d37b/model/cp/cp.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "4b81f67",
+      "timestamp": 1748346759611146994,
+      "model": [
+        {
+          "name": "setFields",
+          "path": "/home/cfdm/partitioned-svd-cylinder/setFields",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/setFields"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/4b81f67/model/setFields",
+            "step_id": null,
+            "task_id": "608726",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/4b81f67/model/setFields/setFields.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/4b81f67/model/setFields/setFields.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "bd3cf1d",
+      "timestamp": 1748346764823930227,
+      "model": [
+        {
+          "name": "decomposePar",
+          "path": "/home/cfdm/partitioned-svd-cylinder/decomposePar",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/decomposePar"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/bd3cf1d/model/decomposePar",
+            "step_id": null,
+            "task_id": "608737",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/bd3cf1d/model/decomposePar/decomposePar.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/bd3cf1d/model/decomposePar/decomposePar.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "f342a28",
+      "timestamp": 1748346770038623533,
+      "model": [
+        {
+          "name": "renumberMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/renumberMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel",
+            "-overwrite"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/renumberMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f342a28/model/renumberMesh",
+            "step_id": null,
+            "task_id": "608747",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f342a28/model/renumberMesh/renumberMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f342a28/model/renumberMesh/renumberMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "b37c1b7",
+      "timestamp": 1748346775253025334,
+      "model": [
+        {
+          "name": "pimpleFoam",
+          "path": "/home/cfdm/partitioned-svd-cylinder/pimpleFoam",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/pimpleFoam"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b37c1b7/model/pimpleFoam",
+            "step_id": null,
+            "task_id": "608765",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b37c1b7/model/pimpleFoam/pimpleFoam.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b37c1b7/model/pimpleFoam/pimpleFoam.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "1b3c784",
+      "timestamp": 1748346781730210220,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_2",
+          "params": {
+            "SVD_RANK": 2
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_2_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_2/svd_ensemble_2_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "2"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1b3c784/ensemble/svd_ensemble_2/svd_ensemble_2_0",
+                "step_id": null,
+                "task_id": "608792",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1b3c784/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1b3c784/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "a4e516d",
+      "timestamp": 1748346786952641163,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_4",
+          "params": {
+            "SVD_RANK": 4
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_4_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_4/svd_ensemble_4_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "4"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a4e516d/ensemble/svd_ensemble_4/svd_ensemble_4_0",
+                "step_id": null,
+                "task_id": "608805",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a4e516d/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a4e516d/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "1409a78",
+      "timestamp": 1748346792177251436,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_8",
+          "params": {
+            "SVD_RANK": 8
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_8_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_8/svd_ensemble_8_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "8"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1409a78/ensemble/svd_ensemble_8/svd_ensemble_8_0",
+                "step_id": null,
+                "task_id": "608818",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1409a78/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1409a78/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "bc02020",
+      "timestamp": 1748346797400882587,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_16",
+          "params": {
+            "SVD_RANK": 16
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_16_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_16/svd_ensemble_16_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "16"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/bc02020/ensemble/svd_ensemble_16/svd_ensemble_16_0",
+                "step_id": null,
+                "task_id": "608831",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/bc02020/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/bc02020/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "b3d8462",
+      "timestamp": 1748425982797595930,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b3d8462/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b3d8462/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b3d8462/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "624708",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "177481c",
+      "timestamp": 1748425983182532978,
+      "model": [
+        {
+          "name": "blockMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/blockMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/blockMesh"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/177481c/model/blockMesh",
+            "step_id": null,
+            "task_id": "624743",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/177481c/model/blockMesh/blockMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/177481c/model/blockMesh/blockMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "ba175ef",
+      "timestamp": 1748425988393616435,
+      "model": [
+        {
+          "name": "cp",
+          "path": "/home/cfdm/partitioned-svd-cylinder/cp",
+          "exe_args": [
+            "-r",
+            "cylinder2D/0.org",
+            "cylinder2D/0"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/bin/cp"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ba175ef/model/cp",
+            "step_id": null,
+            "task_id": "624753",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ba175ef/model/cp/cp.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ba175ef/model/cp/cp.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "793c867",
+      "timestamp": 1748425993607380051,
+      "model": [
+        {
+          "name": "setFields",
+          "path": "/home/cfdm/partitioned-svd-cylinder/setFields",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/setFields"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/793c867/model/setFields",
+            "step_id": null,
+            "task_id": "624762",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/793c867/model/setFields/setFields.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/793c867/model/setFields/setFields.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "01569a1",
+      "timestamp": 1748425998820415421,
+      "model": [
+        {
+          "name": "decomposePar",
+          "path": "/home/cfdm/partitioned-svd-cylinder/decomposePar",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/decomposePar"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/01569a1/model/decomposePar",
+            "step_id": null,
+            "task_id": "624773",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/01569a1/model/decomposePar/decomposePar.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/01569a1/model/decomposePar/decomposePar.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "f34779a",
+      "timestamp": 1748426004039602280,
+      "model": [
+        {
+          "name": "renumberMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/renumberMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel",
+            "-overwrite"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/renumberMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f34779a/model/renumberMesh",
+            "step_id": null,
+            "task_id": "624782",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f34779a/model/renumberMesh/renumberMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f34779a/model/renumberMesh/renumberMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "ff04dea",
+      "timestamp": 1748426009257725098,
+      "model": [
+        {
+          "name": "pimpleFoam",
+          "path": "/home/cfdm/partitioned-svd-cylinder/pimpleFoam",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/pimpleFoam"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ff04dea/model/pimpleFoam",
+            "step_id": null,
+            "task_id": "624806",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ff04dea/model/pimpleFoam/pimpleFoam.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ff04dea/model/pimpleFoam/pimpleFoam.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "b4c03a4",
+      "timestamp": 1748426015571725034,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_2",
+          "params": {
+            "SVD_RANK": 2
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_2_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_2/svd_ensemble_2_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "2"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b4c03a4/ensemble/svd_ensemble_2/svd_ensemble_2_0",
+                "step_id": null,
+                "task_id": "624828",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b4c03a4/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b4c03a4/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "726f7d8",
+      "timestamp": 1748426020787540033,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_4",
+          "params": {
+            "SVD_RANK": 4
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_4_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_4/svd_ensemble_4_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "4"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/726f7d8/ensemble/svd_ensemble_4/svd_ensemble_4_0",
+                "step_id": null,
+                "task_id": "624843",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/726f7d8/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/726f7d8/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "a4d55b3",
+      "timestamp": 1748426026018022745,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_8",
+          "params": {
+            "SVD_RANK": 8
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_8_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_8/svd_ensemble_8_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "8"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a4d55b3/ensemble/svd_ensemble_8/svd_ensemble_8_0",
+                "step_id": null,
+                "task_id": "624857",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a4d55b3/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a4d55b3/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "b3ab827",
+      "timestamp": 1748426031241304898,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_16",
+          "params": {
+            "SVD_RANK": 16
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_16_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_16/svd_ensemble_16_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "16"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b3ab827/ensemble/svd_ensemble_16/svd_ensemble_16_0",
+                "step_id": null,
+                "task_id": "624870",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b3ab827/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b3ab827/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "e2dc211",
+      "timestamp": 1748583576659151749,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/e2dc211/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/e2dc211/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/e2dc211/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "654027",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "5d27b29",
+      "timestamp": 1748583583001853573,
+      "model": [
+        {
+          "name": "blockMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/blockMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/blockMesh"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5d27b29/model/blockMesh",
+            "step_id": null,
+            "task_id": "654073",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5d27b29/model/blockMesh/blockMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/5d27b29/model/blockMesh/blockMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "e5ac6b3",
+      "timestamp": 1748583588215445382,
+      "model": [
+        {
+          "name": "cp",
+          "path": "/home/cfdm/partitioned-svd-cylinder/cp",
+          "exe_args": [
+            "-r",
+            "cylinder2D/0.org",
+            "cylinder2D/0"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/bin/cp"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/e5ac6b3/model/cp",
+            "step_id": null,
+            "task_id": "654084",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/e5ac6b3/model/cp/cp.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/e5ac6b3/model/cp/cp.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "9d22698",
+      "timestamp": 1748583593429113886,
+      "model": [
+        {
+          "name": "setFields",
+          "path": "/home/cfdm/partitioned-svd-cylinder/setFields",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/setFields"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/9d22698/model/setFields",
+            "step_id": null,
+            "task_id": "654094",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/9d22698/model/setFields/setFields.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/9d22698/model/setFields/setFields.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "b04d7d7",
+      "timestamp": 1748583598644016185,
+      "model": [
+        {
+          "name": "decomposePar",
+          "path": "/home/cfdm/partitioned-svd-cylinder/decomposePar",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/decomposePar"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b04d7d7/model/decomposePar",
+            "step_id": null,
+            "task_id": "654105",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b04d7d7/model/decomposePar/decomposePar.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/b04d7d7/model/decomposePar/decomposePar.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "3278f0d",
+      "timestamp": 1748583603863559442,
+      "model": [
+        {
+          "name": "renumberMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/renumberMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel",
+            "-overwrite"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/renumberMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3278f0d/model/renumberMesh",
+            "step_id": null,
+            "task_id": "654116",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3278f0d/model/renumberMesh/renumberMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3278f0d/model/renumberMesh/renumberMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "afbb536",
+      "timestamp": 1748583609081814338,
+      "model": [
+        {
+          "name": "pimpleFoam",
+          "path": "/home/cfdm/partitioned-svd-cylinder/pimpleFoam",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/pimpleFoam"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/afbb536/model/pimpleFoam",
+            "step_id": null,
+            "task_id": "654133",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/afbb536/model/pimpleFoam/pimpleFoam.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/afbb536/model/pimpleFoam/pimpleFoam.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "1836ed5",
+      "timestamp": 1748583658856008711,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_2",
+          "params": {
+            "SVD_RANK": 2
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_2_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_2/svd_ensemble_2_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "2"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1836ed5/ensemble/svd_ensemble_2/svd_ensemble_2_0",
+                "step_id": null,
+                "task_id": "654185",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1836ed5/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/1836ed5/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "fdd86cb",
+      "timestamp": 1748583664078564245,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_4",
+          "params": {
+            "SVD_RANK": 4
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_4_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_4/svd_ensemble_4_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "4"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/fdd86cb/ensemble/svd_ensemble_4/svd_ensemble_4_0",
+                "step_id": null,
+                "task_id": "654203",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/fdd86cb/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/fdd86cb/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "ff02ec1",
+      "timestamp": 1748583669302856381,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_8",
+          "params": {
+            "SVD_RANK": 8
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_8_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_8/svd_ensemble_8_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "8"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ff02ec1/ensemble/svd_ensemble_8/svd_ensemble_8_0",
+                "step_id": null,
+                "task_id": "654216",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ff02ec1/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/ff02ec1/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "f51dcd2",
+      "timestamp": 1748583674529008065,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_16",
+          "params": {
+            "SVD_RANK": 16
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_16_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_16/svd_ensemble_16_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "16"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f51dcd2/ensemble/svd_ensemble_16/svd_ensemble_16_0",
+                "step_id": null,
+                "task_id": "654229",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f51dcd2/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f51dcd2/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "a51d770",
+      "timestamp": 1748684481156514254,
+      "model": [],
+      "orchestrator": [
+        {
+          "name": "orchestrator",
+          "type": "redis",
+          "interface": [
+            "lo"
+          ],
+          "shards": [
+            {
+              "name": "orchestrator_0",
+              "hostname": "127.0.0.1",
+              "port": 8000,
+              "cluster": false,
+              "conf_file": null,
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a51d770/database/orchestrator/orchestrator_0/orchestrator_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a51d770/database/orchestrator/orchestrator_0/orchestrator_0.err",
+              "memory_file": "",
+              "client_file": "",
+              "client_count_file": "",
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/a51d770/database/orchestrator/orchestrator_0",
+                "step_id": null,
+                "task_id": "678724",
+                "managed": false
+              }
+            }
+          ]
+        }
+      ],
+      "ensemble": []
+    },
+    {
+      "run_id": "9006af3",
+      "timestamp": 1748684494981120194,
+      "model": [
+        {
+          "name": "blockMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/blockMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/blockMesh"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/9006af3/model/blockMesh",
+            "step_id": null,
+            "task_id": "678770",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/9006af3/model/blockMesh/blockMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/9006af3/model/blockMesh/blockMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "c616d8e",
+      "timestamp": 1748684500207505721,
+      "model": [
+        {
+          "name": "cp",
+          "path": "/home/cfdm/partitioned-svd-cylinder/cp",
+          "exe_args": [
+            "-r",
+            "cylinder2D/0.org",
+            "cylinder2D/0"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/bin/cp"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/c616d8e/model/cp",
+            "step_id": null,
+            "task_id": "678783",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/c616d8e/model/cp/cp.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/c616d8e/model/cp/cp.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "079fc99",
+      "timestamp": 1748684505422752788,
+      "model": [
+        {
+          "name": "setFields",
+          "path": "/home/cfdm/partitioned-svd-cylinder/setFields",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/setFields"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/079fc99/model/setFields",
+            "step_id": null,
+            "task_id": "678795",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/079fc99/model/setFields/setFields.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/079fc99/model/setFields/setFields.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "78ce94f",
+      "timestamp": 1748684510639365760,
+      "model": [
+        {
+          "name": "decomposePar",
+          "path": "/home/cfdm/partitioned-svd-cylinder/decomposePar",
+          "exe_args": [
+            "-case",
+            "cylinder2D"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/decomposePar"
+            ],
+            "run_command": null,
+            "run_args": {}
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/78ce94f/model/decomposePar",
+            "step_id": null,
+            "task_id": "678806",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/78ce94f/model/decomposePar/decomposePar.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/78ce94f/model/decomposePar/decomposePar.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "d73b332",
+      "timestamp": 1748684515860866755,
+      "model": [
+        {
+          "name": "renumberMesh",
+          "path": "/home/cfdm/partitioned-svd-cylinder/renumberMesh",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel",
+            "-overwrite"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/renumberMesh"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/d73b332/model/renumberMesh",
+            "step_id": null,
+            "task_id": "678815",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/d73b332/model/renumberMesh/renumberMesh.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/d73b332/model/renumberMesh/renumberMesh.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "3c83a1e",
+      "timestamp": 1748684521081137004,
+      "model": [
+        {
+          "name": "pimpleFoam",
+          "path": "/home/cfdm/partitioned-svd-cylinder/pimpleFoam",
+          "exe_args": [
+            "-case",
+            "cylinder2D",
+            "-parallel"
+          ],
+          "run_settings": {
+            "exe": [
+              "/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/pimpleFoam"
+            ],
+            "run_command": "/usr/bin/mpirun",
+            "run_args": {
+              "np": "4"
+            }
+          },
+          "batch_settings": {},
+          "params": {},
+          "files": {
+            "Symlink": [],
+            "Configure": [],
+            "Copy": []
+          },
+          "colocated_db": {},
+          "telemetry_metadata": {
+            "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3c83a1e/model/pimpleFoam",
+            "step_id": null,
+            "task_id": "678835",
+            "managed": false
+          },
+          "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3c83a1e/model/pimpleFoam/pimpleFoam.out",
+          "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/3c83a1e/model/pimpleFoam/pimpleFoam.err"
+        }
+      ],
+      "orchestrator": [],
+      "ensemble": []
+    },
+    {
+      "run_id": "f192518",
+      "timestamp": 1748684560996654406,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_2",
+          "params": {
+            "SVD_RANK": 2
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_2_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_2/svd_ensemble_2_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "2"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f192518/ensemble/svd_ensemble_2/svd_ensemble_2_0",
+                "step_id": null,
+                "task_id": "678892",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f192518/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/f192518/ensemble/svd_ensemble_2/svd_ensemble_2_0/svd_ensemble_2_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "292fc22",
+      "timestamp": 1748684566222997074,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_4",
+          "params": {
+            "SVD_RANK": 4
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_4_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_4/svd_ensemble_4_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "4"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/292fc22/ensemble/svd_ensemble_4/svd_ensemble_4_0",
+                "step_id": null,
+                "task_id": "678906",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/292fc22/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/292fc22/ensemble/svd_ensemble_4/svd_ensemble_4_0/svd_ensemble_4_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "926b4a1",
+      "timestamp": 1748684571450582536,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_8",
+          "params": {
+            "SVD_RANK": 8
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_8_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_8/svd_ensemble_8_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "8"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/926b4a1/ensemble/svd_ensemble_8/svd_ensemble_8_0",
+                "step_id": null,
+                "task_id": "678923",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/926b4a1/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/926b4a1/ensemble/svd_ensemble_8/svd_ensemble_8_0/svd_ensemble_8_0.err"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": "04431be",
+      "timestamp": 1748684576683137165,
+      "model": [],
+      "orchestrator": [],
+      "ensemble": [
+        {
+          "name": "svd_ensemble_16",
+          "params": {
+            "SVD_RANK": 16
+          },
+          "batch_settings": {},
+          "models": [
+            {
+              "name": "svd_ensemble_16_0",
+              "path": "/home/cfdm/partitioned-svd-cylinder/svd_ensemble_16/svd_ensemble_16_0",
+              "exe_args": [
+                "partial_svd.py"
+              ],
+              "run_settings": {
+                "exe": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/bin/python"
+                ],
+                "run_command": null,
+                "run_args": {}
+              },
+              "batch_settings": {},
+              "params": {
+                "SVD_RANK": "16"
+              },
+              "files": {
+                "Symlink": [],
+                "Configure": [
+                  "/home/cfdm/anaconda3/envs/smartsim_conda/openfoam-smartsim-1.0/tutorials/postProcessing/foamSmartSimSvd/partial_svd.py"
+                ],
+                "Copy": []
+              },
+              "colocated_db": {},
+              "telemetry_metadata": {
+                "status_dir": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/04431be/ensemble/svd_ensemble_16/svd_ensemble_16_0",
+                "step_id": null,
+                "task_id": "678938",
+                "managed": false
+              },
+              "out_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/04431be/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.out",
+              "err_file": "/home/cfdm/partitioned-svd-cylinder/.smartsim/telemetry/partitioned-svd-cylinder/04431be/ensemble/svd_ensemble_16/svd_ensemble_16_0/svd_ensemble_16_0.err"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+clean bo env) cfdm@cfdm-MS-7A15:-/OpenFOAM/cdn-v2412/run/Final21_Latest/spinatogDisk/neshMettons python3
+Python 3.10.18 (main, Jun 5 2025, 13:14:17) [GCC 11.2.0 on Linux
+Type "help", "copyright", "credits" or "license" for more information.
+from smartsim import Experiment
+exp = Experiment("mesh-notton", Launcher ="local")
+db = exp.create_database (port=8810, Interface="lo")
+exp.start(db)
+

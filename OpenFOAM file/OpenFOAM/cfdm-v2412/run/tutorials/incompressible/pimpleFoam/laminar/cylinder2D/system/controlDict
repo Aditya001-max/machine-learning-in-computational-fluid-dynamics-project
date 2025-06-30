@@ -1,0 +1,155 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2412                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     pimpleFoam;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         2000;
+
+deltaT          0.05;
+
+writeControl    runTime;
+
+writeInterval   0.5;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  16;
+
+timeFormat      general;
+
+timePrecision   8;
+
+runTimeModifiable false;
+
+
+functions
+{
+    fieldAverage1
+    {
+        type                fieldAverage;
+        libs                (fieldFunctionObjects);
+
+        fields
+        (
+            U
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+
+            p
+            {
+                mean        on;
+                prime2Mean  on;
+                base        time;
+            }
+        );
+
+        timeStart           10;
+        executeControl      timeStep;
+        executeInterval     1;
+        writeControl        onEnd;
+    }
+
+    fieldAverage2
+    {
+        type                fieldAverage;
+        libs                (fieldFunctionObjects);
+
+        fields
+        (
+            U
+            {
+                mean            on;
+                prime2Mean      off;
+                base            time;
+                windowType      exact;
+                window          0.25;
+                windowName      movingAverageWindow;
+                allowRestart    no;
+            }
+        );
+
+        useNamePrefix       true;
+        timeStart           10;
+        executeControl      timeStep;
+        executeInterval     1;
+        writeControl        onEnd;
+    }
+
+    mapFields1
+    {
+        type            mapFields;
+        libs            (fieldFunctionObjects);
+        mapRegion       coarseMesh;
+        mapMethod       cellVolumeWeight;
+        consistent      no;
+        patchMap        ();
+        cuttingPatches  ();
+        fields
+        (
+            U
+            p
+        );
+
+        timeStart       10;
+        timeEnd         2000;
+
+        executeControl  timeStep;
+        executeInterval 10;
+
+        writeControl    timeStep;
+        writeInterval   50;
+    }
+
+    mapFields2
+    {
+        ${mapFields1}
+        fields
+        (
+            UMean
+            pMean
+            UPrime2Mean
+            pPrime2Mean
+            fieldAverage2:UMean_movingAverageWindow
+        );
+    }
+
+    yPlus1
+    {
+        type            yPlus;
+        libs            (fieldFunctionObjects);
+        timeStart       10;
+        writeFields     yes;
+        executeControl  timeStep;
+        executeInterval 1;
+        writeControl    writeTime;
+    }
+
+    
+}
+
+
+// ************************************************************************* //

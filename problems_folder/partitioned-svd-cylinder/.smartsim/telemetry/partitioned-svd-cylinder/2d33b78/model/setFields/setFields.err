@@ -1,0 +1,1 @@
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/setFields: symbol lookup error: /usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/setFields: undefined symbol: _ZTIN4Foam10UOPBstreamE

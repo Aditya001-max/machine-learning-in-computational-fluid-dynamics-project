@@ -1,0 +1,259 @@
+ommand 'dirname' is available in the following places
+ * /bin/dirname
+ * /usr/bin/dirname
+The command could not be located because '/bin:/usr/bin' is not included in the PATH environment variable.
+dirname: command not found
+Command 'dirname' is available in the following places
+ * /bin/dirname
+ * /usr/bin/dirname
+The command could not be located because '/bin:/usr/bin' is not included in the PATH environment variable.
+dirname: command not found
+cfdm@cfdm-MS-7A15:~$ cd ~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/
+cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ conda activate clean_bo_env
+(clean_bo_env) cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ python3 python_script_meshmotion.py
+10:50:50 cfdm-MS-7A15 SmartSim[1089084:MainThread] ERROR Orchestrator failed during startup See /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/orchestrator for details
+Traceback (most recent call last):
+  File "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/python_script_meshmotion.py", line 177, in <module>
+    main()
+  File "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/python_script_meshmotion.py", line 62, in main
+    exp.start(db)
+  File "/home/cfdm/anaconda3/envs/clean_bo_env/lib/python3.10/site-packages/smartsim/log.py", line 353, in _contextual
+    return ctx.run(_ctx_modifier)
+  File "/home/cfdm/anaconda3/envs/clean_bo_env/lib/python3.10/site-packages/smartsim/log.py", line 348, in _ctx_modifier
+    result = fn(self, *args, **kwargs)
+  File "/home/cfdm/anaconda3/envs/clean_bo_env/lib/python3.10/site-packages/smartsim/experiment.py", line 243, in start
+    self._control.start(
+  File "/home/cfdm/anaconda3/envs/clean_bo_env/lib/python3.10/site-packages/smartsim/_core/control/controller.py", line 138, in start
+    launched = self._launch(exp_name, exp_path, manifest)
+  File "/home/cfdm/anaconda3/envs/clean_bo_env/lib/python3.10/site-packages/smartsim/_core/control/controller.py", line 427, in _launch
+    self._launch_orchestrator(orchestrator, manifest_builder)
+  File "/home/cfdm/anaconda3/envs/clean_bo_env/lib/python3.10/site-packages/smartsim/_core/control/controller.py", line 541, in _launch_orchestrator
+    self._orchestrator_launch_wait(orchestrator)
+  File "/home/cfdm/anaconda3/envs/clean_bo_env/lib/python3.10/site-packages/smartsim/_core/control/controller.py", line 809, in _orchestrator_launch_wait
+    raise SmartSimError(msg)
+smartsim.error.errors.SmartSimError: Orchestrator failed during startup See /home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/mesh-motion/orchestrator for details
+(clean_bo_env) cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ nano python_script_meshmotion.py 
+(clean_bo_env) cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ nano python_script_meshmotion.py 
+(clean_bo_env) cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ python3 python_script_meshmotion.py
+SmartRedis Library@11-07-53:WARNING: Environment variable SR_LOG_FILE is not set. Defaulting to stdout
+SmartRedis Library@11-07-53:WARNING: Environment variable SR_LOG_LEVEL is not set. Defaulting to INFO
+Default@11-07-53:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-07-54:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-07-55:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-07-56:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-07-57:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-07-58:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-07-59:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-00:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-01:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-02:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-03:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-04:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-05:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-06:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-07:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-08:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-09:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-10:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-11:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-12:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-13:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-14:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-15:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-16:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-17:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-18:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-19:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-20:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-21:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-22:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-23:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-24:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-25:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-26:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-27:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-28:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-29:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-30:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-31:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-32:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-33:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-34:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-35:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-36:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-37:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-38:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-39:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-40:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-41:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-42:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-43:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-44:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-45:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-46:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-47:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-48:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-49:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-50:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-51:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-52:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-53:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-54:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-55:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-56:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-57:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-58:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-08-59:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-00:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-01:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-02:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-03:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-04:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-05:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-06:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-07:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-08:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-09:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-10:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-11:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-12:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-13:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-14:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-15:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-16:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-17:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-18:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-19:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-20:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-21:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-22:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-23:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-24:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-25:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-26:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-27:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-28:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-29:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-30:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-31:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Default@11-09-32:ERROR: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+SmartRedis Library@11-09-33:ERROR: Exception at "/project/src/cpp/redis.cpp", line 770: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Traceback (most recent call last):
+  File "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/python_script_meshmotion.py", line 137, in <module>
+    main()
+  File "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/python_script_meshmotion.py", line 38, in main
+    client = Client(address="127.0.0.1:8000", cluster=False)
+  File "/home/cfdm/anaconda3/envs/clean_bo_env/lib/python3.10/site-packages/smartredis/client.py", line 88, in __init__
+    pyclient = self.__address_construction(*a, **kw)
+  File "/home/cfdm/anaconda3/envs/clean_bo_env/lib/python3.10/site-packages/smartredis/client.py", line 127, in __address_construction
+    raise RedisConnectionError(str(e)) from None
+smartredis.error.RedisConnectionError: Unable to connect to backend database: failed to connect to Redis (127.0.0.1:8000): Connection refused
+Could not connect to Orchestrator at 127.0.0.1:8000
+(clean_bo_env) cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ python3 python_script_meshmotion.py
+SmartRedis Library@11-12-01:WARNING: Environment variable SR_LOG_FILE is not set. Defaulting to stdout
+SmartRedis Library@11-12-01:WARNING: Environment variable SR_LOG_LEVEL is not set. Defaulting to INFO
+Time step 1
+Traceback (most recent call last):
+  File "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/python_script_meshmotion.py", line 137, in <module>
+    main()
+  File "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/python_script_meshmotion.py", line 49, in main
+    raise ValueError("Points dataset list not updated.")
+ValueError: Points dataset list not updated.
+(clean_bo_env) cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ python3 python_script_meshmotion.py
+SmartRedis Library@11-14-26:WARNING: Environment variable SR_LOG_FILE is not set. Defaulting to stdout
+SmartRedis Library@11-14-26:WARNING: Environment variable SR_LOG_LEVEL is not set. Defaulting to INFO
+Time step 1
+Traceback (most recent call last):
+  File "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/python_script_meshmotion.py", line 137, in <module>
+    main()
+  File "/home/cfdm/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion/python_script_meshmotion.py", line 49, in main
+    raise ValueError("Points dataset list not updated.")
+ValueError: Points dataset list not updated.
+(clean_bo_env) cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ python3 python_script_meshmotion.py
+SmartRedis Library@11-35-53:WARNING: Environment variable SR_LOG_FILE is not set. Defaulting to stdout
+SmartRedis Library@11-35-53:WARNING: Environment variable SR_LOG_LEVEL is not set. Defaulting to INFO
+Time step 1
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 2
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 3
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 4
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 5
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 6
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 7
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 8
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 9
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 10
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 11
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 12
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 13
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 14
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 15
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 16
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 17
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 18
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Time step 19
+Default@11-36-43:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-44:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+Default@11-36-45:ERROR: Redis IO error when executing command: Failed to get reply: Resource temporarily available
+
+clean_bo_env) cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ ^C
+(clean_bo_env) cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ ^C
+(clean_bo_env) cfdm@cfdm-MS-7A15:~/OpenFOAM/cfdm-v2412/run/final_21_latest/spinningDisk/meshMotion$ 
+
+
+

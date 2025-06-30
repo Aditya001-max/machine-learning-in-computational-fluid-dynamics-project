@@ -1,0 +1,4 @@
+15:11:50 cfdm-MS-7A15 __main__.decomposePar-DAA8X9XKTRMW[678806:MainThread] INFO Indirect proxy 678806 child process 678812 started
+15:11:50 cfdm-MS-7A15 __main__.decomposePar-DAA8X9XKTRMW[678806:MainThread] INFO Waiting for child process 678812 to complete
+15:11:51 cfdm-MS-7A15 __main__.decomposePar-DAA8X9XKTRMW[678806:MainThread] INFO Indirect proxy 678806 child process 678812 complete. return code: 127
+15:11:51 cfdm-MS-7A15 __main__.decomposePar-DAA8X9XKTRMW[678806:MainThread] INFO Performing cleanup

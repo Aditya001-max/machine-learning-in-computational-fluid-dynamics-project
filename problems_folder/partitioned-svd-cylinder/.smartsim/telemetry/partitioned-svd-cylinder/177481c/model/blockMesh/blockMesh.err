@@ -1,0 +1,1 @@
+/usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/blockMesh: symbol lookup error: /usr/lib/openfoam/openfoam2412/platforms/linux64GccDPInt32Opt/bin/blockMesh: undefined symbol: _ZNK4Foam16coordinateSystem10writeEntryERNS_7OstreamE

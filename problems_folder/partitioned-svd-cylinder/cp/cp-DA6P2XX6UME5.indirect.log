@@ -1,0 +1,4 @@
+11:00:52 cfdm-MS-7A15 __main__.cp-DA6P2XX6UME5[598779:MainThread] INFO Indirect proxy 598779 child process 598786 started
+11:00:52 cfdm-MS-7A15 __main__.cp-DA6P2XX6UME5[598779:MainThread] INFO Waiting for child process 598786 to complete
+11:00:52 cfdm-MS-7A15 __main__.cp-DA6P2XX6UME5[598779:MainThread] INFO Indirect proxy 598779 child process 598786 complete. return code: 1
+11:00:52 cfdm-MS-7A15 __main__.cp-DA6P2XX6UME5[598779:MainThread] INFO Performing cleanup
